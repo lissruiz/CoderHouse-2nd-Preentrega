@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- REDES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JQUERY CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <!-- ESTILOS -->
+   <link rel="stylesheet" href="estilos.css">
+   <title>Sismo</title>
+</head>
+
+<body>
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-md-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../Index.html">
+        <img class="logo" src="../imagenes/logo02-01.png" alt="logo Sismo Club">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">  
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Planes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Calendario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tienda</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>   
+</header>
+<main>
+<!-- Carousel -->
+ <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+   <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div> 
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/mujer con pesa.jpg" alt="Los Angeles" class="d-block w-100 justify-content-center">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/barra con peso.jpg" alt="Chicago" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/hombre levanta peso.jpg" alt="New York" class="d-block w-100">
+    </div>
+  </div> 
+
+  <!-- Left and right controls/icons -->
+   <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</main> 
+    
+<section class="cards">
+        <div>
+            <img class="imagenes" src="imagenes/sala.png" alt="Sala">
+        </div>
+        
+        <div class="cards">
+        <div>
+            <img class="imagenes" src="imagenes/cardio.png" alt="Running">
+        </div>
+        
+        <div class="cards">
+            <div>
+            <img class="imagenes" src="imagenes/funcional.png" alt="Funcional">
+        </div>
+
+        <div class="cards">
+            <div>
+            <img class="imagenes" src="imagenes/suspension.png" alt="suspension">
+        </div>
+</section>
+    
+<section class="section2">
+        <div id="position1" class="col">
+            <img class="imag" src="imagenes/1x/people.png" alt="Instructores">
+            <h3 class="title3">Instructores calificados</h3>
+            <img id="margintop"  class="imag" src="imagenes/1x/gym.png" alt="Maquinas">
+            <h3 class="title3">Maquinas modernas</h3>
+         </div>
+
+        <div class="col2">
+            <img class="cierre" src="imagenes/1x/ilustrac V.png" alt="cierre1">
+            <div class="descrip">
+            <h2 class="abiertotitle">ABIERTO</h2>
+            <P> Lunes - Viernes</P>
+            <p class="horario"> 7:00am - 21:00pm</p>
+            <P id="espacio"> Sábados</P>
+            <p class="horario"> 8:00am - 12:00pm</p>
+            </div>
+            <img class="cierre" src="imagenes/1x/ilustrac V 1.png" alt="cierre2">
+         </div>
+
+         <div id="position2" class="col">
+            <img class="imag" class="img" src="imagenes/1x/entrenamientos.png" alt="Instructores">
+            <h3 class="title3">Entrenamientos personalizados</h3>
+            <img id="margintop2" class="imag" class="img" src="imagenes/1x/comunidad.png" alt="Comunidad">
+            <h3 class="title3">Unida comunidad</h3>
+         </div>
+</section>
+
+<article class="gratissection">
+        <div class="videosection">
+            <video src="videos/video general.mp4" autoplay controls muted></video>
+        </div>
+        <div class="cta">
+            <h3 class="h3title">Tenemos una primera clase GRATIS para ti
+            </h3>
+            <p class="descripgratis">¡No te lo pierdas!</p>
+            <a class="agendarme" href="">Quiero agendarme</a>
+        </div>
+</article>
+    
+        
+
+     
+        <!-- <h4>Contactános</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442353.380160429!2d-58.42539002273057!3d-32.58823787828402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8000d0f7e473%3A0xf0d9ebddd899fff9!2sSismo%20Ft.%20Club!5e0!3m2!1ses-419!2suy!4v1696597426549!5m2!1ses-419!2suy" width="auto" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>"
+        
+        <div>
+           <p>Rellena el formulario siguiente para ponerte en contacto con nosotros.</p>
+        <form action="procesar_formulario.php" method="post">
+        </div>
+    
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" required placeholder="¡No dudes en escribirnos cualquier cosa que desees!Estamos aquí para escucharte."></textarea>
+
+        <button class="formulariobtn" type="submit">Enviar</button>
+    </form> -->
+
+    <footer>
+        <p>&copy; 2023 Sismo Club. Todos los derechos reservados</p>
+        <div>
+            <a class="redes" href="#"><i class="fa-brands fa-facebook fa-beat"></i></a>
+            <a class="redes" href="#"><i class="fa-brands fa-whatsapp fa-beat"></i></a> 
+            <a class="redes" href="#"><i class="fa-brands fa-instagram fa-beat"></i></a>
+            <a class="redes" href="#"><i class="fa-regular fa-envelope fa-beat"></i></a>
+        </div>
+    </footer>  
+    <!-- BUNDLE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+    
+  <script>
+      $(document).ready(function() {
+    // Selector para el elemento navbar
+    var $navbar = $('.navbar');
+
+    // Altura en píxeles desde la parte superior de la página en la que se cambia el color
+    var scrollOffset = 10;
+
+    // Manejador de evento de desplazamiento
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > scrollOffset) {
+        $navbar.addClass('scrolled'); // Agrega la clase 'scrolled' al navbar
+      } else {
+        $navbar.removeClass('scrolled'); // Quita la clase 'scrolled' del navbar
+      }
+    });
+  });
+  </script> 
+    
+</body>
+</html>

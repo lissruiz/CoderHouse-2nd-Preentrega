@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Noto+Serif+TC:wght@700&display=swap');
+
+/* font-family: 'Noto Sans', sans-serif; */
+/* font-family: 'Noto Serif TC', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Noto Sans', sans-serif;
+ }
+
+ /* HEADER */
+.scrolled {
+    background-color: black;
+    transition: background-color 0.3s; 
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    padding: 0;
+}  
+
+.nav-link{
+    font-variant: small-caps;
+    margin-right: 20px;
+    font-size: 22px;
+    color:#0FC6B5 !important
+}
+.nav-link:hover{
+    color: whitesmoke !important;
+}
+
+
+/* CARRUSEL/MAIN*/
+
+.d-block{
+    background-size: cover;
+    background-position: center;
+}
+.btn{
+    border: 3px solid #0FC6B5;
+    color: whitesmoke;
+    text-transform: capitalize;
+    border-radius: 8px;
+}
+.btn:hover{
+    background-color: #0FC6B5;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: rgba(0, 0, 0, 0.950);
+    color: whitesmoke;
+}
+main{
+    position: relative;
+ }
+
+ .d-block{
+    height: calc(100vh-80px);
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    }
+
+.carousel-caption{
+   background-color: rgba(0, 0, 0, 0.400);
+   justify-content:center;
+   width: 500px;
+   height: 180px;
+   border-radius: 20px;
+   padding: 10px;
+}
+
+h1{
+    color: #0FC6B5;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: xx-large;
+    margin-top: 10px;
+    size: 16px;
+}
+.carousel-caption p{
+    justify-content:center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.carousel-caption a{
+    text-align: center;
+    border: 3px solid #0FC6B5;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    line-height: 1;
+    margin-left: 200px;
+}
+
+.carousel-caption a:hover {
+    background-color: #0FC6B5;
+    color: black;
+}
+
+/* SECTION */
+
+
+h2{
+    color: #0FC6B5;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif
+} 
+
+section{
+    justify-items: center;
+}
+
+.cards{
+    display: flex;
+    align-content: center;
+    margin-left: 65px; 
+    height: 400px;
+}
+
+.imagenes{
+    text-align: center;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* SECTION 2*/
+.section2{
+    margin-left: 50px;
+    width: auto;
+    height: auto;
+    display: inline-flex;
+}
+.col{
+    margin-top: 20px;
+    width: 372px;
+    height: 344px;
+}
+
+#position1{
+    margin-left: 50px;
+}
+#position2{
+    margin-left: 30px;
+    align-items: center;
+}
+.title3{
+    padding-bottom: 10px;
+    width: 400px;
+    top: -1px;
+    left: 0;
+    color:whitesmoke;
+    font-size: 20px;
+}
+#margintop{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+#margintop2{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.imag{
+    margin-left: 180px;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.cierre{
+    height: 250px;
+    
+}
+.col2{
+    margin-left: 15px;
+    justify-content: center;
+    display: flex
+}
+.descrip{
+    text-align: center;
+    padding-top: 20px;
+    width: 200px;
+    display: block    
+
+}
+#espacio{
+    margin-top: 40px;
+}
+
+/* SECTION 3 ARTICLE */
+
+.gratissection{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.videosection{
+    border: #0FC6B5 4px solid;
+    border-radius: 10px;
+    margin-left: 250px;
+    padding: 0;
+    
+}
+
+.h3title{
+    font-size:x-large;
+
+}
+ 
+.cta{
+    border: #0FC6B5 4px dotted;
+    border-radius: 20px;
+    width: 500px;
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+}
+.descripgratis{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.agendarme{
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid #0FC6B5;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 150px;
+    color: whitesmoke;
+
+}
+.agendarme:hover{
+    text-decoration: none;
+    background-color: #0FC6B5;
+    color: black;
+}
+
+/* MEMBRESIA */
+h3{
+    text-align: center;
+    font-variant: small-caps;
+    color: #0FC6B5;
+    size: 20px;
+    padding-bottom: 10px;
+
+}
+span{
+    color: #0FC6B5;
+}
+
+
+.explicacion{
+    background-color: rgba(0, 0, 0, 0.400);
+    border-radius: 20px;
+    text-align: center;
+    width: 800px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.contenedor-de-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.contenido {
+    margin-top: 30px;
+    width: 270px;
+    height: 420px;
+    background-color: #0fc6b458;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: left;
+
+}
+
+.contenido:hover{
+    border: #0FC6B5 2px solid;
+}
+
+.contenido a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    border: 3px solid #0FC6B5;
+    border-radius: 10px;
+    color: whitesmoke;
+    padding: 10px 50px;
+}
+
+.contenido a:hover {
+    background-color: #0FC6B5;
+    color: black;
+    border: black;
+}
+
+.lista {
+    font-weight: 300;
+    text-align: left;
+    margin-top: 20px;
+    list-style: disc inside;
+
+}
+
+.precio {
+    color: #0FC6B5;
+    margin-bottom: 15px;
+}
+
+/* INSTRUCTORES */
+
+.descripción{
+    text-align: left;
+    font-weight: 200;
+}
+
+.instructores{
+    background-color: rgba(0, 0, 0, 0.400);
+    width: 500px;
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    display: left;
+    display: flexbox;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+/* CALENDARIO */
+
+.calendario{
+    background-color:rgba(0, 0, 0, 0.400) ;
+    display: block;
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.calendarioimg{
+    margin-top: 20px;
+    margin-left: 370px;
+    border-radius: 20px;
+}
+
+.calendarioimg:hover{
+    border: #0FC6B5 5px solid;
+}
+
+/* PRODUCTOS */
+
+.productosmain{
+    background-color:rgba(0, 0, 0, 0.400);
+    width: 300px;
+    height: 60px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+
+.productcard{
+    border: #0FC6B5 6px solid;
+    border-radius: 20px;
+    height: 390px;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.5s;
+    margin: 10px 80px;
+}
+
+.productcard:hover{
+    transform: scale(1.1);
+}
+.productype{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.precio2{
+    padding-left: 10px;
+}
+
+.imagen{
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+}
+
+ /* FOOTER */
+
+ footer{
+    background-color: black;
+    text-align: center;padding-top: 20px;
+    height: 100px;
+}
+
+.redes{
+    color: #0FC6B5;
+    letter-spacing: 10px;
+    size: 100px;
+}
+/* form{
+    padding: 20px;
+    border-bottom: 3px,solid,back
+
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea{
+    display: block;
+    padding: 10px;
+    border: 2px solid ;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
