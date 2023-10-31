@@ -25,28 +25,13 @@
 .nav-link{
     font-variant: small-caps;
     margin-right: 20px;
-    font-size: 22px;
+    font-size: 25px;
     color:#0FC6B5 !important
 }
 .nav-link:hover{
     color: whitesmoke !important;
-}
-
-
-/* CARRUSEL/MAIN*/
-
-.d-block{
-    background-size: cover;
-    background-position: center;
-}
-.btn{
-    border: 3px solid #0FC6B5;
-    color: whitesmoke;
-    text-transform: capitalize;
-    border-radius: 8px;
-}
-.btn:hover{
-    background-color: #0FC6B5;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
 }
 
 body{
@@ -55,24 +40,44 @@ body{
     background-color: rgba(0, 0, 0, 0.950);
     color: whitesmoke;
 }
-main{
-    position: relative;
- }
 
- .d-block{
-    height: calc(100vh-80px);
-    background-size:cover;
-    background-position:center;
+/* CARRUSEL/MAIN*/
+
+.d-item img{
     display: flex;
-    }
+    justify-content: center;
+    align-items: center;
+    height: 700px;;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0,6);
+}
 
 .carousel-caption{
-   background-color: rgba(0, 0, 0, 0.400);
-   justify-content:center;
-   width: 500px;
-   height: 180px;
-   border-radius: 20px;
-   padding: 10px;
+  overflow:auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 180px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.btn{
+    margin-top: 10px;
+    border: 3px solid #0FC6B5;
+    color: whitesmoke;
+    text-transform: capitalize;
+    border-radius: 8px;
+}
+.btn:hover{
+    background-color: #0FC6B5;
 }
 
 h1{
@@ -83,33 +88,14 @@ h1{
     font-variant: small-caps;
     font-size: xx-large;
     margin-top: 10px;
-    size: 16px;
-}
-.carousel-caption p{
-    justify-content:center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 18px;
+    size: 20px;
 }
 
-.carousel-caption a{
-    text-align: center;
-    border: 3px solid #0FC6B5;
-    color: whitesmoke;
-    text-decoration: none;
-    text-transform: capitalize;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-top: 40px;
-    line-height: 1;
-    margin-left: 200px;
-}
-
-.carousel-caption a:hover {
-    background-color: #0FC6B5;
-    color: black;
-}
+@media (max-width: 768px) {
+    .carousel-caption {
+      width: 80%; 
+    }
+  }
 
 /* SECTION */
 
