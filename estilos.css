@@ -52,7 +52,6 @@ body{
     object-fit: cover;
     filter: brightness(0,6);
 }
-
 .carousel-caption{
   overflow:auto;
   background-color: rgba(0, 0, 0, 0.2);
@@ -68,7 +67,6 @@ body{
   border-radius: 30px;
   padding: 10px;
 }
-
 .btn{
     margin-top: 10px;
     border: 3px solid #0FC6B5;
@@ -79,7 +77,6 @@ body{
 .btn:hover{
     background-color: #0FC6B5;
 }
-
 h1{
     color: #0FC6B5;
     text-align: center;
@@ -98,35 +95,48 @@ h1{
   }
 
 /* SECTION */
-
-
-h2{
-    color: #0FC6B5;
-    padding-bottom: 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Noto Sans', sans-serif
-} 
-
-section{
-    justify-items: center;
-}
-
-.cards{
-    display: flex;
-    align-content: center;
-    margin-left: 65px; 
-    height: 400px;
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    justify-content: center;
 }
 
 .imagenes{
-    text-align: center;
-    height: 300px;
-    border-radius: 10px;
+        height: 300px;
+        border-radius: 10px;
+        max-width: 100%;
 }
 
-/* SECTION 2*/
+@media( max-width: 950px){
+    .image-grid{
+    grid-template-columns: repeat(2, 1fr);
+} 
+}
+@media( max-width: 510px){
+    .image-grid{
+    grid-template-columns: 1fr;
+    margin-left: 60px; 
+    } 
+}
+@media (max-width: 400px) { 
+    .image-grid {
+      grid-template-columns: 1fr; 
+      margin-left: 0; 
+    }
+}
+
+
+/* SECTION 2 / MISION, VISION*/
+
+h2{
+color: #0FC6B5;
+padding-bottom: 20px;
+font-size: 20px;
+text-transform: uppercase;
+text-align: center;
+font-family: 'Noto Sans', sans-serif
+} 
 .section2{
     margin-left: 50px;
     width: auto;
