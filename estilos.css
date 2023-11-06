@@ -341,7 +341,7 @@ h4{
 }
 
 form{
-    text-align: center;
+    text-align: start;
     padding: 20px;
     border-bottom: 3px,solid,back
     
@@ -373,73 +373,78 @@ textarea{
 }
 
 /* MEMBRESIA */
+.title2{
+    color: #0FC6B5;
+    font-variant: small-caps;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #0FC6B5 solid 2px;
+    margin-top: 0;
+}
+.planesdesc{
+    color:#585F5E;
+    font-weight: bold;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 600px;   
+}
+.fondo{
+    background-image: url(imagenes/planes\ cortada.png);
+    background-position: bottom;
+    background-size: cover;
+}
 span{
     color: #0FC6B5;
 }
-
-
-.explicacion{
-    background-color: rgba(0, 0, 0, 0.400);
-    border-radius: 20px;
-    text-align: center;
-    width: 800px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+.contenido{
+    background-color: #0fc6b45d;
+    border: #0FC6B5 3px solid;
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    margin: 20px;
+    margin-left: 100px;
+    padding bottom: 15px; ;
 }
-
-
-.contenedor-de-cards {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    justify-items: center;
+.precio{
+    color:#0FC6B5;
 }
-
-.contenido {
-    margin-top: 30px;
-    width: 270px;
-    height: 420px;
-    background-color: #0fc6b458;
-    padding: 20px;
-    border-radius: 25px;
-    text-align: left;
-
+.lista{
+    padding-top: 20px;
 }
-
-.contenido:hover{
-    border: #0FC6B5 2px solid;
-}
-
-.contenido a {
-    display: inline-block;
+#btnplanes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 10px;
-    margin-left: 15px;
-    text-decoration: none;
-    border: 3px solid #0FC6B5;
-    border-radius: 10px;
-    color: whitesmoke;
-    padding: 10px 50px;
 }
-
-.contenido a:hover {
-    background-color: #0FC6B5;
-    color: black;
-    border: black;
+@media (max-width: 635px){
+    .planesdesc{
+        width: 100%;
+    }
 }
-
-.lista {
-    font-weight: 300;
-    text-align: left;
-    margin-top: 20px;
-    list-style: disc inside;
-
+@media (max-width: 986px){
+    .contenido{
+        justify-content: center;
+        margin-left: 30px;
+    }
 }
-
-.precio {
-    color: #0FC6B5;
-    margin-bottom: 15px;
+@media (max-width: 704px){
+    .contenido{
+        justify-content: center;
+        margin-left: 60px;
+    }
 }
-
+@media (max-width: 392px){
+    .contenido{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
 /* INSTRUCTORES */
 
 .descripción{
