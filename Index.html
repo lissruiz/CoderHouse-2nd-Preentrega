@@ -11,7 +11,7 @@
     <!-- JQUERY CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./estilos.css">
     <title>Sismo</title>
 </head>
 
@@ -51,7 +51,7 @@
 <!-- HEADER FIXED WITH COLOR ON SCROLL END-->
 
 <!-- ACTIVE CAROUSEL WITH H1 AND CTA START-->
-<main>
+<main class="hero-container">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -96,6 +96,15 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+
+    <div class="social-buttons">
+      <a href="#" class="whatsapp-button">
+        <i class="fa-brands fa-whatsapp fa-beat"></i>
+      </a>
+      <a href="#" class="instagram-button">
+        <i class="fa-brands fa-instagram fa-beat"></i>
+      </a>
+    </div>
 </main> 
   <!-- ACTIVE CAROUSEL WITH H1 AND CTA END-->  
 
@@ -146,7 +155,7 @@
 
 <!-- ARTICLE GALERIA START-->
 <section class="container">
-  <h2 class="title2"> Más sobre nosotros</h2>
+  <h2 class="title2"> Un poco más de nosotros</h2>
   <div class="galeria">
     <div class="item item1"></div>
     <div class="item item2"></div>
@@ -181,7 +190,7 @@
     </div>
     <div class="form nright col-md-6">
       <h4>Contactános</h4>
-      <p class="desc">Rellena el formulario siguiente para ponerte en contacto con nosotros.</p>
+      <p class="desc">Puedes escribirnos si tienes alguna duda.</p>
       <form action="procesar_formulario.php" method="post">
         <label for="nombre">Nombre:</label>
         <input class="form1"  type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
@@ -193,7 +202,7 @@
         <textarea class="form1" id="comentarios" name="comentarios" rows="4" required placeholder="¡No dudes en escribirnos cualquier cosa que desees! Estamos aquí para escucharte."></textarea>
   
         <button class="btn tamaño" type="submit">Enviar</button>
-      </form>
+      </form>git st
     </div>
   </div>
 </div>
