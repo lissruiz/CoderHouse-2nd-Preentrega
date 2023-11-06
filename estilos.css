@@ -469,7 +469,14 @@ span{
     }
 }
 /* CALENDARIO */
-
+.title1{
+    color: #585F5E;
+}
+.fondohorario{
+    background-image: url(imagenes/reloj\ \(2\).jpeg);
+    background-position: center;
+    background-size: cover;
+}
 .calendario{
     background-color:rgba(0, 0, 0, 0.400) ;
     display: block;
@@ -491,6 +498,12 @@ span{
 
 /* PRODUCTOS */
 
+.fondoproduct{
+    background-image: url(imagenes/productos.png);
+    background-position: top;
+    background-size: cover;
+
+}
 .productosmain{
     background-color:rgba(0, 0, 0, 0.400);
     width: 300px;
@@ -501,7 +514,7 @@ span{
 
 
 .productcard{
-    border: #0FC6B5 6px solid;
+    border: #0FC6B5 3px dotted;
     border-radius: 20px;
     height: 390px;
     display: inline-block;
