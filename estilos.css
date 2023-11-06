@@ -180,6 +180,7 @@ h3{
     color: whitesmoke;
     padding-bottom: 10px;
     font-size:larger;
+    padding-top: 10px;
 }
 h2{
 color: #0FC6B5;
@@ -445,30 +446,28 @@ span{
         margin-left: 10px;
     }
 }
+
 /* INSTRUCTORES */
 
-.descripción{
-    text-align: left;
-    font-weight: 200;
+.fondonosotros{
+    background-image: url(imagenes/tonos\ verdes.jpg);
+    background-position: center;
+    background-size:cover;
 }
-
-.instructores{
-    background-color: rgba(0, 0, 0, 0.400);
-    width: 500px;
-    border-radius: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
+.persona{
+    width: 300px;
     padding-top: 10px;
-    text-align: center;
-    padding-bottom: 20px;
-    display: left;
-    display: flexbox;
+    gap: 10px;
+}
+.redes:hover{
+    color: whitesmoke;
 }
 
-p{
-    margin-bottom: 10px;
+@media (max-width: 997px){
+    .persona{
+        width: 200px;
+    }
 }
-
 /* CALENDARIO */
 
 .calendario{
@@ -541,4 +540,5 @@ footer{
     color: #0FC6B5;
     letter-spacing: 10px;
     size: 100px;
+    justify-content: center;
 }
