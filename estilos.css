@@ -48,7 +48,7 @@ body{
     display: flex;
     flex-direction: column;
   }
-  
+
   .social-buttons a {
     margin-bottom: 10px;
     background-color:black;
@@ -59,9 +59,9 @@ body{
     width: 40px;
     height: 40px;
   }
-  
+
   .social-buttons a:hover {
-    background-color:#0FC6B5; 
+    background-color:#0FC6B5;
     color: black;
   }
 /* CARRUSEL/MAIN*/
@@ -129,7 +129,7 @@ h1{
         height: 300px;
         border-radius: 10px;
         max-width: 100%;
-        
+
 }
 .imagenes:hover{
     border: black 5px solid;
@@ -216,9 +216,14 @@ font-family: 'Noto Sans', sans-serif
 @media (max-width: 1379px){
     .cierre{
         height: 280px;
+        padding-right: 20px;
     }
 }
-
+@media (max-width: 920px){
+    .entrenamiento{
+        padding-left: 20px;
+    }
+}
 /* SECTION CTA */
 .card{
     background-color: rgba(0, 0, 0, 0.950);
@@ -320,6 +325,46 @@ section{
     background-size: cover;
 }
 
+@media only screen and (max-width: 780px){
+    .galeria{
+        grid-template-columns:repeat(1fr 1fr 1fr);
+        margin: 0;
+    }
+    .item3{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .item1{
+        grid-row: 2/4;
+    }
+    .item5 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .item6{
+        grid-column: 4/5;
+        grid-row: 2/3;
+     }
+    .item8{
+        grid-column:2/6;
+        grid-row:3/6 ;
+    }
+}
+@media only screen and (max-width: 445px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+    .item3{
+        grid-column: 2/3;
+    }
+    .item4{
+        grid-column: 1/1;
+     }
+     .item5{
+        background-position: left;
+     }
+}
+
 /* CONTACTANOS/MAPA */
 h4{
     text-align: center;
@@ -330,14 +375,14 @@ h4{
     height: 600px;
     width: 100%;
     padding-top: 50px;
-    border-radius: 5px;    
+    border-radius: 5px;
 }
 .nright {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;ZCVx
+    height: 100%;
     text-align: center;
 }
 
@@ -345,7 +390,7 @@ form{
     text-align: start;
     padding: 20px;
     border-bottom: 3px,solid,back
-    
+
 }
 .form1{
     width: 100%;
@@ -388,7 +433,7 @@ textarea{
     font-weight: bold;
     padding-bottom: 50px;
     padding-top: 50px;
-    width: 600px;   
+    width: 600px;
 }
 .fondo{
     background-image: url(imagenes/planes\ cortada.png);
@@ -406,7 +451,7 @@ span{
     border-radius: 30px;
     margin: 20px;
     margin-left: 100px;
-    padding bottom: 15px; ;
+    padding-bottom: 15px;
 }
 .precio{
     color:#0FC6B5;
