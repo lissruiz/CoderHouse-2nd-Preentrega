@@ -540,7 +540,21 @@ span{
 .calendarioimg:hover{
     border: #0FC6B5 5px solid;
 }
-
+@media only screen and (max-width: 1300px){
+    .calendarioimg{
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width: 1040px){
+    .calendarioimg{
+        margin-left: 50px;
+    }
+}
+@media only screen and (max-width: 923px){
+    .calendarioimg{
+        width: 75%;
+    }
+}
 /* PRODUCTOS */
 
 .fondoproduct{
