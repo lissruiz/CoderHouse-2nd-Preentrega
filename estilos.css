@@ -577,7 +577,6 @@ span{
     border-radius: 20px;
     height: 390px;
     display: inline-block;
-    overflow: hidden;
     transition: transform 0.5s;
     margin: 10px 80px;
 }
@@ -599,6 +598,36 @@ span{
     border-radius: 15px 15px 0 0;
 }
 
+@media only screen and (max-width: 479px){
+    .productcard{
+        width: 60%;
+        overflow: hidden;
+        height: max-content;
+    }
+}
+@media only screen and (max-width: 479px){
+    .productcard{
+        width: 250px;
+        overflow: hidden;
+        height: max-content;
+    }
+}
+@media only screen and (max-width: 415px){
+    .productcard{
+        width: 250px;
+    } 
+}
+@media only screen and (max-width: 385px){
+    .productcard{
+        margin-left: 30px;
+    } 
+}
+@media only screen and (max-width: 320px){
+    .productcard{
+        width: 280px;
+        margin-left: 15px;
+    } 
+}
  /* FOOTER */
 
 footer{
