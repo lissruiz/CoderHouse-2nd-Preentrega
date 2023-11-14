@@ -47,9 +47,9 @@ body{
     z-index: 1000;
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .social-buttons a {
+.social-buttons a {
     margin-bottom: 10px;
     background-color:black;
     color: whitesmoke;
@@ -58,14 +58,14 @@ body{
     text-align: center;
     width: 40px;
     height: 40px;
-  }
+}
 
-  .social-buttons a:hover {
+.social-buttons a:hover {
     background-color:#0FC6B5;
     color: black;
-  }
-/* CARRUSEL/MAIN*/
+}
 
+/* CARRUSEL/MAIN*/
 .d-item img{
     display: flex;
     justify-content: center;
@@ -110,13 +110,6 @@ h1{
     size: 20px;
 }
 
-@media (max-width: 768px) {
-    .carousel-caption {
-    width: 80%;
-    height: 200px;
-    }
-}
-
 /* SECTION */
 .image-grid{
     display: grid;
@@ -126,9 +119,9 @@ h1{
 }
 
 .imagenes{
-        height: 300px;
-        border-radius: 10px;
-        max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    max-width: 100%;
 
 }
 .imagenes:hover{
@@ -136,31 +129,7 @@ h1{
     border-radius:10px ;
 }
 
-@media( max-width: 950px){
-    .image-grid{
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 20px;
-}
-}
-@media( max-width: 510px){
-    .image-grid{
-    grid-template-columns: 1fr;
-    margin-left: 80px;
-}
-}
-@media (max-width: 400px) {
-    .carousel-caption{
-    height: max-content;
-    }
-    .image-grid {
-    grid-template-columns: 1fr;
-    margin-left: 0;
-    }
-}
-
-
 /* ARTICLE / MISION, VISION*/
-
 .row{
 padding-top: 20px;
 align-items: center;
@@ -169,10 +138,6 @@ align-items: center;
     font-size: 40px;
     padding-bottom: 20px;
     color:#0FC6B5 ;
-    transition: transform 0.5s;
-}
-.size:hover{
-    transform: scale(1.5);
 }
 
 h3{
@@ -190,40 +155,31 @@ text-transform: uppercase;
 text-align: center;
 font-family: 'Noto Sans', sans-serif
 }
+
 .cierre{
-    height: 250px;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+.cierre1{
+    max-width: 55%;
+    height: auto;
+}
+.descrip{
+    text-align: center;
+    padding: 20px; 
+    width: 100%;
 }
 .col2{
     justify-content: center;
     display:flex;
+    align-items: center;
 
-}
-.descrip{
-    text-align: center;
-    padding-top: 20px;
-    width: 200px;
-    display: block
 }
 .espacio{
     margin-top: 40px;
 }
 
-@media (max-width: 1379px){
-    .descrip{
-        padding-top: 0;
-    }
-}
-@media (max-width: 1379px){
-    .cierre{
-        height: 280px;
-        padding-right: 20px;
-    }
-}
-@media (max-width: 920px){
-    .entrenamiento{
-        padding-left: 20px;
-    }
-}
 /* SECTION CTA */
 .card{
     background-color: rgba(0, 0, 0, 0.950);
@@ -323,46 +279,6 @@ section{
     background-image: url(imagenes/barra\ con\ peso.jpg);
     background-position: center;
     background-size: cover;
-}
-
-@media only screen and (max-width: 780px){
-    .galeria{
-        grid-template-columns:repeat(1fr 1fr 1fr);
-        margin: 0;
-    }
-    .item3{
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
-    .item1{
-        grid-row: 2/4;
-    }
-    .item5 {
-        grid-column: 2/4;
-        grid-row: 2/3;
-    }
-    .item6{
-        grid-column: 4/5;
-        grid-row: 2/3;
-     }
-    .item8{
-        grid-column:2/6;
-        grid-row:3/6 ;
-    }
-}
-@media only screen and (max-width: 445px){
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-    }
-    .item3{
-        grid-column: 2/3;
-    }
-    .item4{
-        grid-column: 1/1;
-     }
-     .item5{
-        background-position: left;
-     }
 }
 
 /* CONTACTANOS/MAPA */
@@ -468,29 +384,6 @@ span{
     margin-right: 10px;
     margin-top: 10px;
 }
-@media (max-width: 635px){
-    .planesdesc{
-        width: 100%;
-    }
-}
-@media (max-width: 986px){
-    .contenido{
-        justify-content: center;
-        margin-left: 30px;
-    }
-}
-@media (max-width: 704px){
-    .contenido{
-        justify-content: center;
-        margin-left: 60px;
-    }
-}
-@media (max-width: 392px){
-    .contenido{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-}
 
 /* INSTRUCTORES */
 
@@ -508,11 +401,7 @@ span{
     color: whitesmoke;
 }
 
-@media (max-width: 997px){
-    .persona{
-        width: 200px;
-    }
-}
+
 /* CALENDARIO */
 .title1{
     color: #585F5E;
@@ -540,21 +429,7 @@ span{
 .calendarioimg:hover{
     border: #0FC6B5 5px solid;
 }
-@media only screen and (max-width: 1300px){
-    .calendarioimg{
-        margin-left: 150px;
-    }
-}
-@media only screen and (max-width: 1040px){
-    .calendarioimg{
-        margin-left: 50px;
-    }
-}
-@media only screen and (max-width: 923px){
-    .calendarioimg{
-        width: 75%;
-    }
-}
+
 /* PRODUCTOS */
 
 .fondoproduct{
@@ -598,6 +473,196 @@ span{
     border-radius: 15px 15px 0 0;
 }
 
+ /* FOOTER */
+
+footer{
+    margin-top: 40px;
+    background-color: black;
+    text-align: center;padding-top: 20px;
+    height: 100px;
+}
+
+.redes{
+    color: #0FC6B5;
+    letter-spacing: 10px;
+    size: 100px;
+    justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+/* CARRUSEL */
+@media (max-width: 768px) {
+    .carousel-caption {
+    width: 80%;
+    height: 200px;
+    }
+}
+
+/* SECTION */
+@media( max-width: 950px){
+    .image-grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+}
+}
+@media( max-width: 510px){
+    .image-grid{
+    grid-template-columns: 1fr;
+    margin-left: 70px;
+}
+}
+@media (max-width: 400px) {
+    .carousel-caption{
+    height: max-content;
+    }
+    .image-grid {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    }
+}
+
+/* ARTICLE/MISION/VISION */
+@media (max-width: 1379px){
+    .descrip{
+        padding-top: 0;
+    }
+    .cierre,
+    .cierre1{
+        height: 280px;
+    }
+}
+@media (max-width: 1038px){
+    .entrenamiento{
+        width: 50%;
+        margin-left: 70px;
+    }px
+}
+@media (max-width: 904px){
+.instruct{
+    width: 50%;
+    margin-left: 60px;
+}
+}
+@media (max-width: 766px){
+    .entrenamiento,
+    .instruct{
+margin: 0 0 16px;
+width: 100%;
+    }
+}
+@media (max-width: 510px){
+    .row{
+        gap: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .col2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+}
+.cierre,.cierre1{
+        display: none;
+}
+.descrip{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+}
+
+
+/* GALERIA */
+@media only screen and (max-width: 780px){
+.galeria{
+    grid-template-columns:repeat(1fr 1fr 1fr);
+    margin: 0;
+}
+.item3{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.item1{
+    grid-row: 2/4;
+}
+.item5 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.item6{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.item8{
+    grid-column:2/6;
+    grid-row:3/6 ;
+}
+}
+@media only screen and (max-width: 445px){
+.galeria{
+    grid-template-columns: 1fr 1fr;
+}
+.item3{
+    grid-column: 2/3;
+}
+.item4{
+    grid-column: 1/1;
+}
+.item5{
+    background-position: left;
+    }
+}
+
+/* MEMBRESIA */
+@media (max-width: 635px){
+    .planesdesc{
+        width: 100%;
+    }
+}
+@media (max-width: 986px){
+    .contenido{
+        justify-content: center;
+        margin-left: 30px;
+    }
+}
+@media (max-width: 704px){
+    .contenido{
+        justify-content: center;
+        margin-left: 60px;
+    }
+}
+@media (max-width: 392px){
+    .contenido{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+ /* INSTRUCTORES */
+@media (max-width: 997px){
+    .persona{
+        width: 200px;
+    }
+}
+
+/* CALENDARIO */
+@media only screen and (max-width: 1300px){
+    .calendarioimg{
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width: 1040px){
+    .calendarioimg{
+        margin-left: 50px;
+    }
+}
+@media only screen and (max-width: 923px){
+    .calendarioimg{
+        width: 75%;
+    }
+}
+
+/* PRODUCTOS */
 @media only screen and (max-width: 479px){
     .productcard{
         width: 60%;
@@ -627,19 +692,4 @@ span{
         width: 280px;
         margin-left: 15px;
     } 
-}
- /* FOOTER */
-
-footer{
-    margin-top: 40px;
-    background-color: black;
-    text-align: center;padding-top: 20px;
-    height: 100px;
-}
-
-.redes{
-    color: #0FC6B5;
-    letter-spacing: 10px;
-    size: 100px;
-    justify-content: center;
 }
