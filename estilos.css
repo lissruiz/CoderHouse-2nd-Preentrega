@@ -258,7 +258,7 @@ section{
 }
 .item5{
     grid-area:img5 ;
-    background-image:url(imagenes/pelota\ sismo-01.jpg);
+    background-image:url(imagenes/club.jpeg);
     background-position:TOP;
     background-size: cover;
 }
@@ -276,7 +276,7 @@ section{
 }
 .item8{
     grid-area:img8 ;
-    background-image: url(imagenes/barra\ con\ peso.jpg);
+    background-image: url(imagenes/pelota.jpg);
     background-position: center;
     background-size: cover;
 }
