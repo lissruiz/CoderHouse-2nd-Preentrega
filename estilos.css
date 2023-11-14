@@ -509,16 +509,16 @@ footer{
 @media( max-width: 510px){
     .image-grid{
     grid-template-columns: 1fr;
-    margin-left: 70px;
+    margin-left: 60px;
 }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .carousel-caption{
     height: max-content;
     }
     .image-grid {
     grid-template-columns: 1fr;
-    margin-left: 0;
+    margin-left: 20px;
     }
 }
 
@@ -612,6 +612,9 @@ width: 100%;
 .item5{
     background-position: left;
     }
+.item6 {
+    display: none;
+}   
 }
 
 /* MEMBRESIA */
