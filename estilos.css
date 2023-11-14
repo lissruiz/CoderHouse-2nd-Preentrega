@@ -277,7 +277,7 @@ section{
 }
 .item1{
     grid-area:img1;
-    background-image: url(imagenes/SISMO-07-01.jpg);
+    background-image: url(imagenes/sismo07.jpg);
     background-position: top;
     background-size: cover;
 
@@ -296,25 +296,25 @@ section{
 }
 .item4{
     grid-area:img4 ;
-    background-image:url(imagenes/SISMO-05.jpg) ;
+    background-image:url(imagenes/sismo05.jpg) ;
     background-position: center;
     background-size: cover;
 }
 .item5{
     grid-area:img5 ;
-    background-image:url(imagenes/pelota\ Sismo-01.jpg);
+    background-image:url(imagenes/pelota\ sismo-01.jpg);
     background-position:TOP;
     background-size: cover;
 }
 .item6{
     grid-area:img6 ;
-    background-image: url(imagenes/SISMO-02.jpg);
+    background-image: url(imagenes/sismo02.jpg);
     background-position: top;
     background-size: cover;
 }
 .item7{
     grid-area:img7 ;
-    background-image: url(imagenes/SISMO-04.jpg);
+    background-image: url(imagenes/sismo04.jpg);
     background-position: center;
     background-size: cover;
 }
