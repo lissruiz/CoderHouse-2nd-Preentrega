@@ -523,7 +523,7 @@ footer{
     .entrenamiento{
         width: 50%;
         margin-left: 70px;
-    }px
+    }
 }
 @media (max-width: 904px){
 .instruct{
@@ -649,7 +649,7 @@ width: 100%;
 @media (max-width: 444px) {
     .card-container {
         width: 100%;
-        justify-content: center; +
+        justify-content: center;
         margin-left: 0;
     }
     .card {
