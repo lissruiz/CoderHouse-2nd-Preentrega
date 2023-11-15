@@ -181,7 +181,7 @@ font-family: 'Noto Sans', sans-serif
 }
 
 /* SECTION CTA */
-.card{
+.card1{
     background-color: rgba(0, 0, 0, 0.950);
     margin-top: 10px;
     border: #0FC6B5 dotted 3px;
@@ -277,7 +277,7 @@ section{
 .item8{
     grid-area:img8 ;
     background-image: url(imagenes/pelota.jpg);
-    background-position: center;
+    background-position: top;
     background-size: cover;
 }
 
@@ -387,15 +387,30 @@ span{
 
 /* INSTRUCTORES */
 
+.card-container {
+    margin-left: 90px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.card{
+    background-color: black;
+    border: #0FC6B5 3px dotted;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
 .fondonosotros{
     background-image: url(imagenes/tonos\ verdes.jpg);
     background-position: center;
     background-size:cover;
 }
 .persona{
-    width: 300px;
-    padding-top: 10px;
-    gap: 10px;
+    width:350px;
+    height: auto;
 }
 .redes:hover{
     color: whitesmoke;
@@ -407,7 +422,7 @@ span{
     color: #585F5E;
 }
 .fondohorario{
-    background-image: url(imagenes/reloj\ \(2\).jpeg);
+    background-image: url(imagenes/reloj.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -443,34 +458,6 @@ span{
     width: 300px;
     height: 60px;
     padding-top: 15px;
-    border-radius: 20px;
-}
-
-
-.productcard{
-    border: #0FC6B5 3px dotted;
-    border-radius: 20px;
-    height: 390px;
-    display: inline-block;
-    transition: transform 0.5s;
-    margin: 10px 80px;
-}
-
-.productcard:hover{
-    transform: scale(1.1);
-}
-.productype{
-    text-align: left;
-    padding-left: 10px;
-}
-
-.precio2{
-    padding-left: 10px;
-}
-
-.imagen{
-    height: 300px;
-    border-radius: 15px 15px 0 0;
 }
 
  /* FOOTER */
@@ -642,9 +629,39 @@ width: 100%;
     }
 }
  /* INSTRUCTORES */
-@media (max-width: 997px){
-    .persona{
-        width: 200px;
+@media (max-width: 1010px) {
+    .card {
+        width: auto;
+    }
+    .card-container {
+        width: 100%;
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 803px) {
+    .card-container {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 444px) {
+    .card-container {
+        width: 100%;
+        justify-content: center; +
+        margin-left: 0;
+    }
+    .card {
+        width: auto;
+    }
+}
+
+@media (max-width: 364px) {
+    .card-container {
+        margin-left: 0;
+        justify-content: center;
+        margin-left: 0; 
     }
 }
 
