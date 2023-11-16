@@ -11,6 +11,8 @@
   <!-- BOOSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- ANIMACIONES -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- ESTILOS -->
   <link rel="stylesheet" href="./estilos.css">
   <title>Sismo</title>
@@ -53,7 +55,7 @@
 
   <!-- ACTIVE CAROUSEL WITH H1 AND CTA START-->
   <main class="hero-container">
-    <article>
+    <section class="marg">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -70,7 +72,7 @@
             <div class="carousel-caption">
               <h1>Te damos la bienvenida a Sismo Club</h1>
               <P>¡Que el movimiento empiece desde adentro!</P>
-              <a href="" class="btn">Más información</a>
+              <a href="./paginas/membresia.html" class="btn">Más información</a>
             </div>
           </div>
 
@@ -79,7 +81,7 @@
             <div class="carousel-caption">
               <h1>Una unida y hermosa comunidad</h1>
               <p class="">¡Que el movimiento empiece en tí!</p>
-              <a href="" class="btn">Más información</a>
+              <a href="./paginas/membresia.html" class="btn">Más información</a>
             </div>
           </div>
 
@@ -89,7 +91,7 @@
             <div class="carousel-caption">
               <h1>Animate a moverte</h1>
               <p>¡Te estamos esperando!</p>
-              <a href="" class="btn">Más información</a>
+              <a href="./paginas/membresia.html" class="btn">Más información</a>
             </div>
           </div>
 
@@ -113,127 +115,297 @@
                 </a>
               </div>
           </div>
-        </article>
-        <!-- ACTIVE CAROUSEL WITH H1 AND CTA END-->
+    </section>
+    <!-- ACTIVE CAROUSEL WITH H1 AND CTA END-->
 
-        <!-- SECTION 4 CATEGORIAS START-->
-        <section class="container">
-          <div class="image-grid">
-            <img class="imagenes" src="imagenes/sala.png" alt="Sala">
-            <img class="imagenes" src="imagenes/cardio.png" alt="Running">
-            <img class="imagenes" src="imagenes/funcional.png" alt="Funcional">
-            <img class="imagenes" src="imagenes/suspension.png" alt="suspension">
-          </div>
-        </section>
-        <!-- SECTION 4 CATEGORIAS START END-->
+    <!-- SECTION 4 CATEGORIAS START-->
+    <section class="container">
+      <div class="image-grid">
+        <img class="imagenes" src="imagenes/sala.png" alt="Sala" data-aos="fade-up">
+        <img class="imagenes" src="imagenes/cardio.png" alt="Running" data-aos="fade-up">
+        <img class="imagenes" src="imagenes/funcional.png" alt="Funcional" data-aos="fade-up">
+        <img class="imagenes" src="imagenes/suspension.png" alt="suspension" data-aos="fade-up">
+      </div>
+    </section>
+    <!-- SECTION 4 CATEGORIAS START END-->
 
-        <!-- ARTICLE vision/ mision START-->
-        <article class="container-fluid">
-          <div class="row">
-            <div class="col-12 col-md-4 text-center ">
-              <i class="fa-solid fa-people-group fa-beat size"></i>
-              <p class="instruct">Instructores calificados</p>
-              <i class="fa-solid fa-dumbbell fa-beat size"></i>
-              <p>Maquinas modernas</p>
+    <!-- ARTICLE vision/ mision START-->
+    <article class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 text-center ">
+          <i class="fa-solid fa-people-group fa-beat size"></i>
+          <p class="instruct">Instructores calificados</p>
+          <i class="fa-solid fa-dumbbell fa-beat size"></i>
+          <p>Maquinas modernas</p>
+        </div>
+
+        <div class="col-12 col-md-4 text-center">
+          <div class="col2">
+            <img class="cierre1" src="imagenes/1x/ilustracion v (2).png" alt="cierre1">
+            <div class="descrip">
+              <h2 class="abiertotitle">ABIERTO</h2>
+              <P> Lunes a Viernes</P>
+              <p> 7:00am/21:00pm</p>
+              <P id="espacio"> Sábados</P>
+              <p>8:00am/12:00pm</p>
             </div>
+            <img class="cierre" src="imagenes/1x/ilustracion v.png" alt="cierre2">
+          </div>
+        </div>
 
-            <div class="col-12 col-md-4 text-center">
-              <div class="col2">
-                <img class="cierre1" src="imagenes/1x/ilustracion v (2).png" alt="cierre1">
-                <div class="descrip">
-                  <h2 class="abiertotitle">ABIERTO</h2>
-                  <P> Lunes a Viernes</P>
-                  <p> 7:00am/21:00pm</p>
-                  <P id="espacio"> Sábados</P>
-                  <p>8:00am/12:00pm</p>
-                </div>
-                <img class="cierre" src="imagenes/1x/ilustracion v.png" alt="cierre2">
+        <div class="col-12 col-md-4 text-center">
+          <i class="fa-solid fa-chart-line fa-beat size"></i>
+          <p class="entrenamiento">Entrenamientos personalizados</p>
+          <i class="fa-solid fa-hands-helping fa-beat size"></i>
+          <p>Solidaria comunidad</p>
+        </div>
+      </div>
+    </article>
+    <!-- ARTICLE vision/ mision END-->
+
+    <!-- ARTICLE GALERIA START-->
+    <section class="container">
+      <h2 class="title2"> Un poco más de nosotros</h2>
+      <div class="galeria">
+        <div class="item item1" data-aos="zoom-in"></div>
+        <div class="item item2" data-aos="zoom-in"></div>
+        <div class="item item3" data-aos="zoom-in"></div>
+        <div class="item item4" data-aos="zoom-in"></div>
+        <div class="item item5" data-aos="zoom-in"></div>
+        <div class="item item6" data-aos="zoom-in"></div>
+        <div class="item item7" data-aos="zoom-in"></div>
+        <div class="item item8" data-aos="zoom-in"></div>
+      </div>
+    </section>
+    <!-- ARTICLE GALERIA END-->
+
+    <!-- SECTION CTA START-->
+    <article class="container">
+      <div class="card1 text-center">
+        <div class="card-body">
+          <h3 class="card-title">¡Tenemos una primera clase GRATIS para ti! ✊👍</h3>
+          <p class="card-text">Acá te esperamos</p>
+          <a href="#" class="btn">Quiero agendarme</a>
+        </div>
+      </div>
+    </article>
+    <!-- SECTION CTA END-->
+
+    <!-- TESTIMONIOS START -->
+    <div class="fondo2">
+      <article class="container mt-5">
+        <div class="tab-content">
+          <h2 class="titulo">Lo que dice nuestra comunidad</h2>
+
+          <!-- testimonio1 -->
+          <div class="tab-pane active" id="testimonio1" role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <img class="imagenes" data-aos="zoom-in-down" src="imagenes/testimonio1.png" alt="primer testimonio">
+              </div>
+              <div class="col-lg-8 estruct">
+                <h3 class="lead">Mi Experiencia en Sismo Club</h3>
+                <h2 class="position">Arianna Perez</h2>
+                <p class="testim">"¡Sismo Club ha transformado mi vida! Los entrenadores son increíbles y el ambiente es
+                  motivador. Estoy logrando mis objetivos de manera más rápida de lo que pensé."</p>
               </div>
             </div>
+          </div>
 
-            <div class="col-12 col-md-4 text-center">
-              <i class="fa-solid fa-chart-line fa-beat size"></i>
-              <p class="entrenamiento">Entrenamientos personalizados</p>
-              <i class="fa-solid fa-hands-helping fa-beat size"></i>
-              <p>Solidaria comunidad</p>
+          <!-- testimonio2 -->
+          <div class="tab-pane" id="testimonio2" role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <img class="imagenes" data-aos="zoom-in-down" src="imagenes/testimonio2.png" alt="segundo testimonio">
+              </div>
+              <div class="col-lg-8 estruct">
+                <h3 class="lead">Gran Comunidad</h3>
+                <h2 class="position">Robert Gonzalez</h2>
+                <p class="testim">"Sismo Club no es solo un gimnasio, es una gran comunidad. Me encanta la energía
+                  positiva
+                  y el apoyo que obtengo de todos. Los entrenamientos son desafiantes y efectivos."</p>
+              </div>
             </div>
           </div>
-        </article>
-        <!-- ARTICLE vision/ mision END-->
 
-        <!-- ARTICLE GALERIA START-->
-        <section class="container">
-          <h2 class="title2"> Un poco más de nosotros</h2>
-          <div class="galeria">
-            <div class="item item1"></div>
-            <div class="item item2"></div>
-            <div class="item item3"></div>
-            <div class="item item4"></div>
-            <div class="item item5"></div>
-            <div class="item item6"></div>
-            <div class="item item7"></div>
-            <div class="item item8"></div>
-          </div>
-        </section>
-        <!-- ARTICLE GALERIA END-->
-
-        <!-- SECTION CTA START-->
-        <article class="container">
-          <div class="card1 text-center">
-            <div class="card-body">
-              <h3 class="card-title">¡Tenemos una primera clase GRATIS para ti! ✊👍</h3>
-              <p class="card-text">Acá te esperamos</p>
-              <a href="#" class="btn">Quiero agendarme</a>
+          <!-- testimonio3 -->
+          <div class="tab-pane" id="testimonio3" role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <img class="imagenes" data-aos="zoom-in-down" src="imagenes/testimonio3.png" alt="tercer testimonio">
+              </div>
+              <div class="col-lg-8 estruct">
+                <h3 class="lead">Transformación Total</h3>
+                <h2 class="position">Sofia García</h2>
+                <p class="testim">"Sismo Club me ha llevado a una transformación total. La combinación de entrenamientos
+                  efectivos y nutrición guiada ha cambiado mi vida. Estoy agradecido por ser parte de esta comunidad."
+                </p>
+              </div>
             </div>
           </div>
-        </article>
-        <!-- SECTION CTA END-->
 
-
-        <!-- SECTION CONTACTANOS START-->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="nleft col-md-8">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442353.380160429!2d-58.42539002273057!3d-32.58823787828402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8000d0f7e473%3A0xf0d9ebddd899fff9!2sSismo%20Ft.%20Club!5e0!3m2!1ses-419!2suy!4v1696597426549!5m2!1ses-419!2suy"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-            </div>
-            <div class="form nright col-md-4">
-              <h4>Contactános</h4>
-              <p class="desc">Puedes escribirnos si tienes alguna duda.</p>
-              <form action="procesar_formulario.php" method="post">
-                <label for="nombre">Nombre:</label>
-                <input class="form1" type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
-
-                <label for="correo">Correo Electrónico:</label>
-                <input class="form1" type="email" id="correo" name="correo" required
-                  placeholder="Escribe tu correo electrónico">
-
-                <label for="comentarios">Comentarios:</label>
-                <textarea class="form1" id="comentarios" name="comentarios" rows="4" required
-                  placeholder="¡No dudes en escribirnos cualquier cosa que desees! Estamos aquí para escucharte."></textarea>
-
-                <button class="btn tamaño" type="submit">Enviar</button>
-              </form>
+          <!-- testimonio4 -->
+          <div class="tab-pane" id="testimonio4" role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <img class="imagenes" data-aos="zoom-in-down" src="imagenes/testimonio4.png" alt="cuarto testimonio">
+              </div>
+              <div class="col-lg-8 estruct">
+                <h3 class="lead">Resultados Asombrosos</h3>
+                <h2 class="position">Carlos Romero</h2>
+                <p class="testim">"Desde que me uní a Sismo Club, he visto resultados asombrosos. La variedad de clases
+                  y la dedicación del personal me mantienen motivada. ¡Definitivamente recomendaría este club a
+                  cualquiera!."
+                </p>
+              </div>
             </div>
           </div>
         </div>
-  </main>
 
-  <!-- SECTION CONTACTANOS END-->
+        <!-- tab -->
+        <div class="row imagenpeque">
+          <div class="offset-lg-4 col-md-8 col-sm-12">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#testimonio1" role="tab">
+                  <img class="imagen" data-aos="zoom-out" src="imagenes/testimonio1.png" alt="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#testimonio2" role="tab">
+                  <img class="imagen" data-aos="zoom-out" src="imagenes/testimonio2.png" alt="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tab3-tab" data-bs-toggle="tab" href="#testimonio3" role="tab">
+                  <img class="imagen" data-aos="zoom-out" src="imagenes/testimonio3.png" alt="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tab4-tab" data-bs-toggle="tab" href="#testimonio4" role="tab">
+                  <img class="imagen" data-aos="zoom-out" src="imagenes/testimonio4.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- TESTIMONIOS END -->
+
+    <!-- SECTION CONTACTANOS START-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="nleft col-md-8">
+          <iframe data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442353.380160429!2d-58.42539002273057!3d-32.58823787828402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8000d0f7e473%3A0xf0d9ebddd899fff9!2sSismo%20Ft.%20Club!5e0!3m2!1ses-419!2suy!4v1696597426549!5m2!1ses-419!2suy"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+        </div>
+        <div class="form nright col-md-4">
+          <h2>Contactános</h2>
+          <p class="desc">Puedes escribirnos si tienes alguna duda.</p>
+          <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input class="form1" type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+            <label for="correo">Correo Electrónico:</label>
+            <input class="form1" type="email" id="correo" name="correo" required
+              placeholder="Escribe tu correo electrónico">
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea class="form1" id="comentarios" name="comentarios" rows="4" required
+              placeholder="¡No dudes en escribirnos cualquier cosa que desees! Estamos aquí para escucharte."></textarea>
+
+            <button class="btn tamaño" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION CONTACTANOS END-->
+  </main>
 
   <!-- FOOTER START -->
   <footer>
-    <p>&copy; 2023 Sismo Club. Todos los derechos reservados</p>
+    <div class="row container-fluid">
+      <div class="col-lg-3">
+        <img class="logo" data-aos="zoom-in" src="imagenes/logo02-01.png" alt="Logo">
+        <p class="somos">Somos un centro de entrenamiento funcional que apunta a mejorar la calidad de vida de las
+          personas</p>
+        <img class="logo"  data-aos="zoom-in" src="imagenes/puma.png" alt="puma">
+      </div>
+      <div class="col-lg-3">
+        <h4>Servicios</h4>
+        <div class="servicios" data-aos="zoom-in">
+          <p>Funcional</p>
+          <p>Musculación</p>
+          <p>Cardio</p>
+          <p>Suspensión</p>
+          <p>Clases personalizadas</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <h4 class="nos">Sobre nosotros</h4>
+        <div class="nos2" data-aos="zoom-in">
+          <a href="./paginas/nosotros.html">Nosotros</a>
+          <a href="">Terminos y condiciones</a>
+          <a href="">Politica de privacidad</a>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <h4>Contacto</h4>
+        <div class="contacto-item"data-aos="zoom-in">
+          <div>
+            <i class="fa-solid fa-location-dot fa-beat colorr"></i>
+            <p>Hermanos Gil 1123bis, PRADO</p>
+          </div>
+          <div class="contacto-item">
+            <i class="fa-solid fa-phone fa-beat colorr"></i>
+            <p>099936782</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div>
       <a class="redes" href="#"><i class="fa-brands fa-facebook fa-beat"></i></a>
       <a class="redes" href="#"><i class="fa-brands fa-whatsapp fa-beat"></i></a>
       <a class="redes" href="#"><i class="fa-brands fa-instagram fa-beat"></i></a>
       <a class="redes" href="#"><i class="fa-regular fa-envelope fa-beat"></i></a>
     </div>
+    <p class="derechos">&copy; 2023 Sismo Club. Todos los derechos reservados</p>
   </footer>
   <!-- FOOTER START -->
 
+  <button class="btn back-to-top-btn" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button> 
+
+  <!-- ANIMACIONES -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- BACK TO TOP -->
+  <script> 
+    // Función para animar el scroll hacia arriba
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Agrega animación
+      });
+    }
+    // Función para mostrar/ocultar el botón en función del scroll
+    document.addEventListener('scroll', function () {
+      var scrollPosition = window.scrollY;
+
+      // Ajusta el valor según cuánto quieres que el usuario haga scroll antes de mostrar el botón
+      if (scrollPosition > 300) {
+        document.querySelector('.back-to-top-btn').style.display = 'block';
+      } else {
+        document.querySelector('.back-to-top-btn').style.display = 'none';
+      }
+    });
+  </script>
 
   <!-- BUNDLE -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -242,6 +414,8 @@
 
   <!-- JQUERY CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- NAV BAR -->
   <script>
     $(document).ready(function () {
       // Selector para el elemento navbar
