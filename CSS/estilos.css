@@ -7,6 +7,13 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
+}
+
 /* HEADER */
 .scrolled {
   background-color: black;
@@ -30,13 +37,6 @@
   color: whitesmoke !important;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  color: whitesmoke;
 }
 
 /* CARRUSEL/MAIN*/
@@ -180,7 +180,7 @@ body {
 
 /* GALERIA */
 section {
-  margin-bottom: calc(20px+ 20px);
+  margin-bottom: calc(20px + 20px);
 }
 
 h3 {
@@ -193,7 +193,7 @@ h3 {
 
 .galeria {
   margin-top: 10px;
-  margin-bottom: calc(20px-10px);
+  margin-bottom: calc(20px - 10px);
   border-top: 3px solid #0FC6B5;
   border-radius: 10px;
   height: 600px;
@@ -213,56 +213,56 @@ h3 {
   background-position: top;
   background-size: cover;
   grid-area: img1;
-  background-image: url(./imagenes/sismo07.jpg);
+  background-image: url(../imagenes/sismo07.jpg);
 }
 
 .item2 {
   background-position: center;
   background-size: cover;
   grid-area: img2;
-  background-image: url(./imagenes/hipertrust.png);
+  background-image: url(../imagenes/hipertrust.png);
 }
 
 .item3 {
   background-position: center;
   background-size: cover;
   grid-area: img3;
-  background-image: url(./imagenes/estirando.jpg);
+  background-image: url(../imagenes/estirando.jpg);
 }
 
 .item4 {
   background-position: center;
   background-size: cover;
   grid-area: img4;
-  background-image: url(./imagenes/sismo05.jpg);
+  background-image: url(../imagenes/sismo05.jpg);
 }
 
 .item5 {
   background-position: top;
   background-size: cover;
   grid-area: img5;
-  background-image: url(./imagenes/club.jpeg);
+  background-image: url(../imagenes/club.jpeg);
 }
 
 .item6 {
   background-position: top;
   background-size: cover;
   grid-area: img6;
-  background-image: url(./imagenes/sismo02.jpg);
+  background-image: url(../imagenes/sismo02.jpg);
 }
 
 .item7 {
   background-position: center;
   background-size: cover;
   grid-area: img7;
-  background-image: url(./imagenes/sismo04.jpg);
+  background-image: url(../imagenes/sismo04.jpg);
 }
 
 .item8 {
   background-position: top;
   background-size: cover;
   grid-area: img8;
-  background-image: url(./imagenes/pelota.jpg);
+  background-image: url(../imagenes/pelota.jpg);
 }
 
 /* SECTION CTA */
@@ -459,10 +459,10 @@ h4 {
 .redes {
   color: #0FC6B5 !important;
   letter-spacing: 10px;
-  size: calc(40px+60px);
+  size: calc(40px + 60px);
   justify-content: center;
 }
-.redes:hover {
+.redes .redes:hover {
   color: whitesmoke !important;
 }
 
@@ -481,7 +481,7 @@ h4 {
 body::after {
   content: "";
   display: block;
-  height: calc(40px-20px);
+  height: calc(40px - 20px);
 }
 
 body:hover .back-to-top-btn {
@@ -511,7 +511,7 @@ body:hover .back-to-top-btn {
 }
 
 .fondonosotros {
-  background-image: url(./imagenes/tonos\ verdes.jpg);
+  background-image: url(/imagenes/tonos\ verdes.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -552,7 +552,7 @@ body:hover .back-to-top-btn {
 }
 
 .fondo {
-  background-image: url(./imagenes/planes\ cortada.png);
+  background-image: url(/imagenes/planes\ cortada.png);
   background-position: bottom;
   background-size: cover;
 }
@@ -610,7 +610,7 @@ body:hover .back-to-top-btn {
 }
 
 .fondohorario {
-  background-image: url(./imagenes/reloj.jpeg);
+  background-image: url(/imagenes/reloj.jpeg);
   background-position: center;
   background-size: cover;
 }
@@ -626,7 +626,7 @@ body:hover .back-to-top-btn {
   display: block;
   width: 100%;
   padding-top: 20px;
-  padding-bottom: calc(20px-10px);
+  padding-bottom: calc(20px - 10px);
   border-radius: 20px;
 }
 
@@ -655,7 +655,7 @@ body:hover .back-to-top-btn {
 }
 
 .fondoproduct {
-  background-image: url(./imagenes/productos.png);
+  background-image: url(/imagenes/productos.png);
   background-position: top;
   background-size: cover;
   padding: 60px;

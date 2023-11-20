@@ -1,9 +1,3 @@
-* {
-    margin: $pg;
-    padding: $pg;
-    box-sizing: border-box;
-    font-family: $fontprincipal;
-}
 
 /* HEADER */
 .scrolled {
@@ -29,13 +23,6 @@
         background-color: $colorbase;
         border-radius: $bordersize;
     }
-}
-
-body {
-    margin: $pg;
-    padding: $pg;
-    background-color: black;
-    color: $colortypo1;
 }
 
 /* CARRUSEL/MAIN*/
@@ -220,7 +207,7 @@ body {
 
 /* GALERIA */
 section {
-    margin-bottom: calc(#{$mr}+ 20px);
+    margin-bottom: calc(#{$mr} + 20px);
 }
 
 h3 {
@@ -229,7 +216,7 @@ h3 {
 
 .galeria {
     margin-top: $mt;
-    margin-bottom: calc(#{$bottom}-10px);
+    margin-bottom: calc(#{$bottom} - 10px);
     border-top: $border1;
     border-radius: $bordersize;
     height: $bigimg;
@@ -265,49 +252,49 @@ h3 {
 .item1 {
     @include galeriaimagenes($position: top);
     grid-area: img1;
-    background-image: url(./imagenes/sismo07.jpg);
+    background-image: url(../imagenes/sismo07.jpg);
 }
 
 .item2 {
     @include galeriaimagenes($position: center);
     grid-area: img2;
-    background-image: url(./imagenes/hipertrust.png);
+    background-image: url(../imagenes/hipertrust.png);
 }
 
 .item3 {
     @include galeriaimagenes($position: center);
     grid-area: img3;
-    background-image: url(./imagenes/estirando.jpg);
+    background-image: url(../imagenes/estirando.jpg);
 }
 
 .item4 {
     @include galeriaimagenes($position: center);
     grid-area: img4;
-    background-image: url(./imagenes/sismo05.jpg);
+    background-image: url(../imagenes/sismo05.jpg);
 }
 
 .item5 {
     @include galeriaimagenes($position: top);
     grid-area: img5;
-    background-image: url(./imagenes/club.jpeg);
+    background-image: url(../imagenes/club.jpeg);
 }
 
 .item6 {
     @include galeriaimagenes($position: top);
     grid-area: img6;
-    background-image: url(./imagenes/sismo02.jpg);
+    background-image: url(../imagenes/sismo02.jpg);
 }
 
 .item7 {
     @include galeriaimagenes($position: center);
     grid-area: img7;
-    background-image: url(./imagenes/sismo04.jpg);
+    background-image: url(../imagenes/sismo04.jpg);
 }
 
 .item8 {
     @include galeriaimagenes($position: top);
     grid-area: img8;
-    background-image: url(./imagenes/pelota.jpg);
+    background-image: url(../imagenes/pelota.jpg);
 }
 
 /* SECTION CTA */
@@ -520,7 +507,7 @@ h4 {
 .redes{
     color: $colorprimario !important;
     letter-spacing: $mt;
-    size: calc(#{$icon}+60px);
+    size: calc(#{$icon} + 60px);
     justify-content: center;
 
     .redes:hover {
@@ -546,7 +533,7 @@ h4 {
 body::after {
     content: '';
     display: block;
-    height: calc(#{$icon}-20px); 
+    height: calc(#{$icon} - 20px); 
 } 
 body:hover .back-to-top-btn {
     display: block;

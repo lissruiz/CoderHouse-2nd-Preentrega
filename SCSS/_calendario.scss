@@ -27,7 +27,7 @@
 }
 
 .fondohorario{
-    background-image: url(./imagenes/reloj.jpeg);
+    background-image: url(/imagenes/reloj.jpeg);
     background-position: center;
     background-size: cover;
 
@@ -41,7 +41,7 @@
     display: block;
     width: $w1;
     padding-top: $pb;
-    padding-bottom: calc(#{$pb}-10px);
+    padding-bottom: calc(#{$pb} - 10px);
     border-radius: $pb;
 }
 
