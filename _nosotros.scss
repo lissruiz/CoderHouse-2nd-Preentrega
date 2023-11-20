@@ -1,0 +1,83 @@
+//uso de mixin y condicionales para Heading
+@mixin heading-styles($level) {
+    color: $colorprimario;
+    font-variant: $fontvariant1;
+    text-align: center;
+
+    @if $level==h1 {
+        font-size: $fontsize1;
+        margin-top: $mt;
+    }
+
+    @else if $level==h2 {
+        padding-bottom: $pb;
+        font-size: $fontsize2;
+    }
+
+    @else if $level==h3 {
+        margin-top: $mr;
+        padding-bottom: $pg;
+        font-size: $fontsize3;
+    }
+
+    @else if $level==h4 {
+        margin-top: $pg;
+        font-size: $fontsize4;
+    }
+}
+.containe-fluid{
+    padding: 60px;
+}
+
+.img2 {
+    height: $img;
+    border-radius: $bordersize;
+    max-width: $w1;
+}
+
+.planesdesc {
+    margin-top: $mr;
+    padding: 60px;
+
+    h1 {
+        @include heading-styles(h1);
+        
+    }
+}
+
+.fondonosotros {
+    background-image: url(./imagenes/tonos\ verdes.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-container {
+    margin-left: calc(#{$mr} + 70px);
+    display: inline-flex;
+    justify-content: center;
+    gap: $mr;
+    flex-wrap: wrap;
+
+    .card {
+        background-color: $colorbase;
+        margin-top: $mr;
+        padding-left: $pg;
+        padding-right: $pg;
+        box-shadow: 0 4px 8px $colorprimario;
+        transform: translateY(-5px);
+        border-radius: $bordersize;
+
+        .card-body {
+            pointer-events: none;
+
+            .redes {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+.redes:hover {
+    color: $colortypo1 !important;
+}

@@ -1,0 +1,28 @@
+.card-container {
+    margin-left: calc(#{$mr} + 70px);
+    display: inline-flex;
+    justify-content: center;
+    gap: $mr;
+    flex-wrap: wrap;
+
+    .card {
+        background-color: $colorsecundario;
+        margin-top: $mr;
+        padding-left: $pg;
+        padding-right: $pg;
+
+        &:hover {
+            box-shadow: 0 4px 8px $colorprimario;
+            transform: translateY(-5px);
+            border-radius: $bordersize;
+
+            .card-body {
+                pointer-events: none;
+
+                .redes:hover {
+                    color: $colortypo1 !important;
+                }
+            }
+        }
+    }
+}

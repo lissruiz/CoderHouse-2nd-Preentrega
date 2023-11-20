@@ -1,0 +1,274 @@
+@media (max-width: 768px) {
+    .carousel-caption {
+    width: 80%;
+    height: 200px;
+    }
+}
+
+/* SECTION */
+@media( max-width: 950px){
+    .image-grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+}
+}
+@media( max-width: 510px){
+    .image-grid{
+    grid-template-columns: 1fr;
+    margin-left: 60px;
+}
+}
+@media (max-width: 420px) {
+    .carousel-caption{
+    height: max-content;
+    }
+    .image-grid {
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    }
+}
+
+/* ARTICLE/MISION/VISION */
+@media (max-width: 1379px){
+    .descrip{
+        padding-top: 0;
+    }
+    .cierre,
+    .cierre1{
+        height: 280px;
+    }
+}
+@media (max-width: 1038px){
+    .entrenamiento{
+        width: 50%;
+        margin-left: 70px;
+    }
+}
+@media (max-width: 904px){
+.instruct{
+    width: 50%;
+    margin-left: 60px;
+}
+}
+@media (max-width: 766px){
+    .entrenamiento,
+    .instruct{
+margin: 0 0 16px;
+width: 100%;
+    }
+}
+@media (max-width: 510px){
+    .row{
+        gap: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .col2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+}
+.cierre,.cierre1{
+        display: none;
+}
+.descrip{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+}
+
+
+/* GALERIA */
+@media only screen and (max-width: 780px){
+.galeria{
+    grid-template-columns:repeat(1fr 1fr 1fr);
+    margin: 0;
+}
+.item3{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.item1{
+    grid-row: 2/4;
+}
+.item5 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.item6{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.item8{
+    grid-column:2/6;
+    grid-row:3/6 ;
+}
+}
+@media only screen and (max-width: 445px){
+.galeria{
+    grid-template-columns: 1fr 1fr;
+}
+.item3{
+    grid-column: 2/3;
+}
+.item4{
+    grid-column: 1/1;
+}
+.item5{
+    background-position: left;
+    }
+.item6 {
+    display: none;
+}   
+}
+
+/* MEMBRESIA */
+@media (max-width: 635px){
+    .planesdesc{
+        width: 100%;
+    }
+}
+@media (max-width: 986px){
+    .contenido{
+        justify-content: center;
+        margin-left: 30px;
+    }
+}
+@media (max-width: 704px){
+    .contenido{
+        justify-content: center;
+        margin-left: 60px;
+    }
+}
+@media (max-width: 392px){
+    .contenido{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+ /* INSTRUCTORES */
+@media (max-width: 1010px) {
+    .card {
+        width: auto;
+    }
+    .card-container {
+        width: 100%;
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 803px) {
+    .card-container {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 444px) {
+    .card-container {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .card {
+        width: auto;
+    }
+}
+
+@media (max-width: 364px) {
+    .card-container {
+        margin-left: 0;
+        justify-content: center;
+        margin-left: 0; 
+    }
+}
+
+/* CALENDARIO */
+@media only screen and (max-width: 1300px){
+    .calendarioimg{
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width: 1040px){
+    .calendarioimg{
+        margin-left: 50px;
+    }
+}
+@media only screen and (max-width: 923px){
+    .calendarioimg{
+        width: 75%;
+    }
+}
+
+/* PRODUCTOS */
+
+@media (max-width: 1010px) {
+    .card {
+        width: 100%; 
+    }
+    .card-container{
+        margin-left: 0;
+    }
+}
+
+/* TESTIMONIO */
+@media (max-width: 990px) {
+    .row.align-items-center {
+    flex-direction: column-reverse;
+}
+.col-lg-4{
+    width: 50%;
+}
+.row{
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.row.imagenpeque{
+    justify-content: center;
+    text-align: center;
+}
+.estruct{
+    margin-bottom: 0px;
+}
+.nav-tabs .nav-item {
+    width: 25%;
+    text-align: center;
+}
+.nav-tabs .nav-item a {
+    display: inline-block;
+}
+.imagenpeque {
+margin-top: 5px;
+gap: 40px;
+}
+} 
+.position{
+    text-align: center;
+}
+@media (max-width: 765px) { 
+    .col-lg-4{
+        width: 100%;
+    }
+}
+@media (max-width: 586px) {
+    .imagenpeque .nav-tabs .nav-item {
+    width: 50%; 
+    }
+}
+
+/* FOOTER */
+@media (max-width: 960px){
+    .col-lg-3 {
+        padding-bottom: 20px;
+    }
+}
+
+/* BTN BTP */
+
+@media (max-width: 783px) {
+    .back-to-top-btn {
+        display: none;
+    }
+}

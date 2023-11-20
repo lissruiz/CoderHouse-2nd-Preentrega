@@ -1,0 +1,553 @@
+* {
+    margin: $pg;
+    padding: $pg;
+    box-sizing: border-box;
+    font-family: $fontprincipal;
+}
+
+/* HEADER */
+.scrolled {
+    background-color: $color-scrolled;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    height: $logo-h;
+    width: $logo-w;
+    padding: $pg;
+}
+
+.nav-link {
+    font-variant: $fontvariant1;
+    margin-right: $mr;
+    font-size: $fontsizenav;
+    color: $colorprimario !important;
+    transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+
+    &:hover {
+        color: $colortypo1 !important;
+        background-color: $colorbase;
+        border-radius: $bordersize;
+    }
+}
+
+body {
+    margin: $pg;
+    padding: $pg;
+    background-color: black;
+    color: $colortypo1;
+}
+
+/* CARRUSEL/MAIN*/
+
+.marg {
+    margin-top: $pg;
+}
+
+@mixin heredarestilosflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-item img {
+    @include heredarestilosflex;
+    height: 700px;
+    width: $w1;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+//uso de mixin y condicionales para Heading
+
+@mixin heading-styles($level) {
+    color: $colorprimario;
+    font-variant: $fontvariant1;
+    text-align: center;
+
+    @if $level==h1 {
+        font-size: $fontsize1;
+        margin-top: $mt;
+    }
+
+    @else if $level==h2 {
+        padding-bottom: $pb;
+        font-size: $fontsize2;
+    }
+
+    @else if $level==h3 {
+        margin-top: $mr;
+        font-size: $fontsize3;
+    }
+
+    @else if $level==h4 {
+        margin-top: $pg;
+        font-size: $fontsize4;
+    }
+}
+
+//FIN
+
+.carousel-caption {
+    @include heredarestilosflex;
+    flex-direction: column;
+    background-color: $colorbase;
+    top: $w2;
+    left: $w2;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 180px;
+    border-radius: $bordersize2;
+    padding: 10px;
+
+    .btn {
+        margin-top: $mt;
+        border: $border1;
+        color: $colortypo1;
+        text-transform: $fontbtn;
+        border-radius: $borderbtn;
+
+        &:hover {
+            background-color: $colorprimario;
+            color: $colorsecundario;
+        }
+    }
+
+    h1 {
+        @include heading-styles(h1);
+    }
+}
+
+@mixin RS-BTN {
+    bottom: $bottom;
+    right: $right;
+    display: flex;
+    z-index: $z-index;
+}
+
+.social-buttons {
+    @include RS-BTN;
+    position: absolute;
+    flex-direction: column;
+
+    a {
+        margin-bottom: $mt;
+        background-color: $colorsecundario;
+        color: $colortypo1;
+        border-radius: $w2;
+        font-size: calc(#{$icon} - 10px);
+        text-align: center;
+        width: $icon;
+        height: $icon;
+
+        :hover {
+            background-color: $colorprimario;
+            color: $colorsecundario;
+            border-radius: $w1;
+        }
+    }
+}
+
+/* SECTION */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $mr;
+    justify-content: center;
+
+    .imagenes {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            height: $img;
+            border-radius: $bordersize;
+            max-width: $w1;
+
+            &:hover {
+                border: $border3;
+                border-radius: $bordersize;
+            }
+        }
+    }
+}
+
+/* ARTICLE / MISION, VISION*/
+.row {
+    padding-top: $mr;
+    align-items: center;
+
+    .size {
+        font-size: $icon;
+        padding-bottom: $pb;
+        color: $colorprimario;
+    }
+
+    .instruct,
+    .entrenamiento {
+        padding-bottom:calc(#{$pb} + 10px);
+    }
+}
+
+.col2 {
+    @include heredarestilosflex;
+
+    .cierre1 {
+        max-width: 55%;
+        height: $height;
+    }
+
+    .descrip {
+        text-align: center;
+        padding: $pb;
+        width: $w1;
+
+        h2 {
+            @include heading-styles(h2);
+
+            .espacio {
+                margin-top:calc(#{$pb} + 20px);
+            }
+
+            .cierre {
+                max-width: $w1;
+                height: $height;
+                padding: $pg;
+            }
+        }
+    }
+}
+
+/* GALERIA */
+section {
+    margin-bottom: calc(#{$mr}+ 20px);
+}
+
+h3 {
+    @include heading-styles(h3)
+}
+
+.galeria {
+    margin-top: $mt;
+    margin-bottom: calc(#{$bottom}-10px);
+    border-top: $border1;
+    border-radius: $bordersize;
+    height: $bigimg;
+    width: $w1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+        "img1 img2 img3 img4"
+        "img1 img5 img6 img6"
+        "img1 img8 img6 img6";
+
+    .item {
+        border: $border3;
+        border-radius: $bordersize2;
+        overflow: hidden;
+    }
+}
+
+@mixin galeriaimagenes($position:top) {
+    background-position: $position;
+    background-size: cover;
+}
+
+@mixin galeriaimagenes1 {
+    @include galeriaimagenes($position: top);
+}
+
+@mixin galeriaimagenes2 {
+    @include galeriaimagenes($position: center);
+}
+
+.item1 {
+    @include galeriaimagenes($position: top);
+    grid-area: img1;
+    background-image: url(./imagenes/sismo07.jpg);
+}
+
+.item2 {
+    @include galeriaimagenes($position: center);
+    grid-area: img2;
+    background-image: url(./imagenes/hipertrust.png);
+}
+
+.item3 {
+    @include galeriaimagenes($position: center);
+    grid-area: img3;
+    background-image: url(./imagenes/estirando.jpg);
+}
+
+.item4 {
+    @include galeriaimagenes($position: center);
+    grid-area: img4;
+    background-image: url(./imagenes/sismo05.jpg);
+}
+
+.item5 {
+    @include galeriaimagenes($position: top);
+    grid-area: img5;
+    background-image: url(./imagenes/club.jpeg);
+}
+
+.item6 {
+    @include galeriaimagenes($position: top);
+    grid-area: img6;
+    background-image: url(./imagenes/sismo02.jpg);
+}
+
+.item7 {
+    @include galeriaimagenes($position: center);
+    grid-area: img7;
+    background-image: url(./imagenes/sismo04.jpg);
+}
+
+.item8 {
+    @include galeriaimagenes($position: top);
+    grid-area: img8;
+    background-image: url(./imagenes/pelota.jpg);
+}
+
+/* SECTION CTA */
+.btn {
+    margin-top: $mt;
+    border: $border1;
+    color: $colortypo1;
+    text-transform: $fontbtn;
+    border-radius: $borderbtn;
+
+    &:hover {
+        background-color: $colorprimario;
+        color: $colorsecundario;
+    }
+}
+.card1 {
+    background-color: $colorsecundario;
+    margin-top: $mt;
+    border: $border2;
+    border-radius: $bordersize2;
+
+    .CTA {
+        font-size: $fontsize3;
+        color: $colorprimario;
+    }
+
+    .btn {
+        @extend .btn;
+    }
+}
+
+/* TESTIMONIO */
+
+.img2 {
+    height: $img;
+    border-radius: $bordersize;
+    max-width: $w1;
+}
+.fondo2 {
+    background-image: linear-gradient(0deg, #080808 0%, #0fc6b5 40%, #060606 90%);
+
+    .active {
+        border-radius: $bordersize;
+
+        .row {
+            padding-top: 0;
+            padding-bottom: 40px;
+
+            .col-lg-4 {
+                padding-top: 20px;
+
+                img {
+                    height: $img;
+                    border-radius: $bordersize;
+                    max-width: $w1;
+                }
+            }
+        }
+    }
+}
+
+.estruct {
+    padding: $mr;
+    margin-bottom:50px ;
+
+    #position {
+        text-align: start;
+    }
+    P{
+        margin-bottom: $pg;
+    }
+}
+
+.imagenpeque {
+    position: relative;
+    margin-top: -135px;
+
+    .nav-tabs {
+        border-bottom: none;
+        margin: $pg;
+    }
+
+    .imagen {
+        width: 100px;
+        height: $height;
+    }
+}
+
+/* CONTACTANOS/MAPA */
+@mixin heredarestilosflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-top: $mt;
+    border: $border1;
+    color: $colortypo1;
+    text-transform: $fontbtn;
+    border-radius: $borderbtn;
+}
+
+.mapa {
+    height: $bigimg;
+    width: $w1;
+    padding-top: calc(#{$pb} + 30px);
+    border-radius: calc(#{$mt} - 5px);
+}
+
+form {
+    text-align: start;
+    padding: $mr;
+    border-bottom: $border3;
+}
+
+.nright {
+    @include heredarestilosflex;
+    flex-direction: column;
+    height: $w1;
+    text-align: center;
+
+    h4 {
+    @include heading-styles(h4)
+    }
+    }
+
+    .desc {
+        margin-right: $mt;
+    }
+
+    .form1 {
+        width: $w1;
+        border: $colorprimario 2px solid;
+        border-radius: $bordersize;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: calc(#{$mt} - 5px);
+    }
+
+    input,
+    textarea {
+        display: block;
+        padding: $mt;
+        border: 2px solid;
+        border-radius: 3px;
+        font-size: calc(#{$fontsize4} - 8px);
+        margin-bottom: $mt;
+    }
+
+    .btn-type {
+        @extend .btn;
+    }
+
+    .tamaño {
+        width: $w1;
+        @extend .btn-type;
+    }
+
+/* FOOTER */
+footer{
+    border-top: $border2;
+    border-radius: $bordersize;
+    width: $w1;
+    margin-top: 40px;
+    margin-bottom: $pg;
+    background:$colorsecundario;
+    text-align: center;
+    height: $height;   
+
+    .logo-imagen{
+        @extend .logo;
+    }
+    .somos{
+        margin-top: $mr;
+    }
+}
+h4 {
+    @include heading-styles(h4);
+    margin-top: $pg;
+}
+.servicios p{
+    margin: 5px;
+    text-decoration: none;
+}
+.nos{
+    margin-bottom: $mr;
+}
+.nos2 a{
+    display: flex;
+    flex-direction: column; 
+    color: $colortypo1;
+    margin-bottom: $mr;
+
+    .nos2 a:hover {
+        color:$colortypo1 ;
+        text-decoration: underline;
+    }
+}
+.contacto-item {
+    display: block;  
+    
+    .colorr{
+        color: #0FC6B5;
+    }
+}
+
+.redes{
+    color: $colorprimario !important;
+    letter-spacing: $mt;
+    size: calc(#{$icon}+60px);
+    justify-content: center;
+
+    .redes:hover {
+        color: $colortypo1 !important;
+    }
+}
+.derechos{
+    padding-top: $mr;
+}
+
+/* BTN BACK TO TOP */
+@mixin RS-BTN {
+    bottom: $bottom;
+    right: $right;
+    z-index: $z-index;
+}
+
+.back-to-top-btn {
+    @include RS-BTN;    
+    position: fixed;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: calc(#{$icon}-20px); 
+} 
+body:hover .back-to-top-btn {
+    display: block;
+} 
