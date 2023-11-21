@@ -49,6 +49,9 @@
     width: 50%;
     margin-left: 60px;
 }
+.cierre,.cierre1{
+        display: none;
+}
 }
 @media (max-width: 766px){
     .entrenamiento,
@@ -68,9 +71,6 @@ width: 100%;
         justify-content: center;
         align-items: center;
         width: 100%;
-}
-.cierre,.cierre1{
-        display: none;
 }
 .descrip{
     margin-top: 20px;
