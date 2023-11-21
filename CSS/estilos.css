@@ -511,7 +511,7 @@ body:hover .back-to-top-btn {
 }
 
 .fondonosotros {
-  background-image: url(/imagenes/tonos\ verdes.jpg);
+  background-image: url(../imagenes/tonos\ verdes.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -552,7 +552,7 @@ body:hover .back-to-top-btn {
 }
 
 .fondo {
-  background-image: url(/imagenes/planes\ cortada.png);
+  background-image: url(../imagenes/planes\ cortada.png);
   background-position: bottom;
   background-size: cover;
 }
@@ -610,7 +610,7 @@ body:hover .back-to-top-btn {
 }
 
 .fondohorario {
-  background-image: url(/imagenes/reloj.jpeg);
+  background-image: url(../imagenes/reloj.jpeg);
   background-position: center;
   background-size: cover;
 }
@@ -655,7 +655,7 @@ body:hover .back-to-top-btn {
 }
 
 .fondoproduct {
-  background-image: url(/imagenes/productos.png);
+  background-image: url(../imagenes/productos.png);
   background-position: top;
   background-size: cover;
   padding: 60px;
