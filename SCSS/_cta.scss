@@ -1,0 +1,30 @@
+/* SECTION CTA */
+
+.btn {
+    margin-top: $mt;
+    border: $border1;
+    color: $colortypo1;
+    text-transform: $fontbtn;
+    border-radius: $borderbtn;
+
+    &:hover {
+        background-color: $colorprimario;
+        color: $colorsecundario;
+    }
+}
+
+.card-body {
+    background-color: $colorsecundario;
+    margin-top: $mt;
+    border: $border2;
+    border-radius: $bordersize2;
+    
+    .CTA {
+        font-size: $fontsize4;
+        color: $colorprimario;
+    }
+
+    .btn {
+        @extend .btn;
+    }
+}

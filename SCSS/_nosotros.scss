@@ -1,31 +1,5 @@
-//uso de mixin y condicionales para Heading
-@mixin heading-styles($level) {
-    color: $colorprimario;
-    font-variant: $fontvariant1;
-    text-align: center;
 
-    @if $level==h1 {
-        font-size: $fontsize1;
-        margin-top: $mt;
-    }
-
-    @else if $level==h2 {
-        padding-bottom: $pb;
-        font-size: $fontsize2;
-    }
-
-    @else if $level==h3 {
-        margin-top: $mr;
-        padding-bottom: $pg;
-        font-size: $fontsize3;
-    }
-
-    @else if $level==h4 {
-        margin-top: $pg;
-        font-size: $fontsize4;
-    }
-}
-.containe-fluid{
+.container-fluid{
     padding: 60px;
 }
 
@@ -46,7 +20,7 @@
 }
 
 .fondonosotros {
-    background-image: url(/imagenes/tonos\ verdes.jpg);
+    background-image: url(../imagenes/tonos\ verdes.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -67,8 +41,8 @@
         transform: translateY(-5px);
         border-radius: $bordersize;
 
-        .card-body {
-            pointer-events: none;
+        .card-body2 {
+            padding: $p;
 
             .redes {
                 font-size: 20px;

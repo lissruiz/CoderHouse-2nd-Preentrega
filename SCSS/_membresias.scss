@@ -1,47 +1,5 @@
-//uso de mixin y condicionales para Heading
-@mixin heading-styles($level) {
-    color: $colorprimario;
-    font-variant: $fontvariant1;
-    text-align: center;
-
-    @if $level == h1 {
-        font-size: $fontsize1;
-        margin-top: $mt;
-    }
-
-    @else if $level == h2 {
-        padding-bottom: $pb;
-        font-size: $fontsize2;
-    }
-
-    @else if $level == h3 {
-        margin-top: $mr;
-        padding-bottom: $pg;
-        font-size: $fontsize3;
-    }
-
-    @else if $level == h4 {
-        margin-top: $pg;
-        font-size: $fontsize4;
-    }
-}
-
-@mixin heredarestilosflex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn {
-    margin-top: $mt;
-    border: $border1;
-    color: $colortypo1;
-    text-transform: $fontbtn;
-    border-radius: $borderbtn;
-}
-
 .fondo {
-    background-image: url(/imagenes/planes\ cortada.png);
+    background-image: url(../imagenes/planes\ cortada.png);
     background-position: bottom;
     background-size: cover;
 
@@ -50,11 +8,10 @@
         font-weight: bold;
         padding-bottom: calc(#{$pb} + 30px);
         padding-top: calc(#{$pb} + 30px);
-        width: 580px;
+        width: 760px;
 
         span {
-            color: $colorprimario;
-            text-shadow: $colorsecundario;
+            font-weight: bold
         }
 
         h1 {
@@ -67,31 +24,33 @@
 .contenido {
     background-color: #0fc6b45d;
     border: $border1;
-    width: $img;
+    width: 300px;
     height: 400px;
     border-radius: $bordersize;
     margin: $mr;
-    margin-left: 100px;
-    padding-bottom: 15px;
+    margin-left: 100px;  
+}
 
-    h2 {
-        @include heading-styles(h2);
-        border-bottom: $border1;
-        border-radius: $bordersize;
-    }
+h2 {
+    @include heading-styles(h2);
+    border-bottom: $border1;
+    border-radius: $bordersize;
+}
+.des{
+    padding-left: $mr;
+}
+.precio {
+    color: $colorprimario;
+    padding-left: $mr;
+}
 
-    .precio {
-        color: $colorprimario;
-    }
+#btnplanes {
+    @include heredarestilosflex;
+    align-content: center;
+    margin: $mt;
+    @extend .btn;
+}
 
-    #btnplanes {
-        @include heredarestilosflex;
-        align-content: center;
-        margin: $mt;
-        @extend .btn;
-    }
-
-    .lista {
-        padding-top: $pb;
-    }
+.lista {
+    padding-top: $pb;
 }

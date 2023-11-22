@@ -10,19 +10,17 @@ $colorbase: rgba(0, 0, 0, 0.3);
 $colortypo1: whitesmoke;
 $colortypo2: #585F5E;
 
-$color-scrolled: black;
 
 // FONT
 $fontprincipal: 'Noto Sans', sans-serif;
 $fontsecundaria: 'Noto Serif TC', serif;
 $fontvariant1: small-caps;
 $fontvariant2: uppercase;
-$fontsizenav: 24px;
 $fontsize1: 30px;
 $fontsize2:28px;
-$fontsize3:25px;
-$fontsize4:22px;
-$fontbtn:capitalize;
+$fontsize3:26px;
+$fontsize4:24px;
+$fontbtn:normal;
 
 // BORDER
 $border1: 3px solid $colorprimario;
@@ -33,8 +31,8 @@ $bordersize2:30px;
 $borderbtn:8px;
 
 // SIZE
-$logo-h: 70px;
-$logo-w: 70px;
+$logo-h: 80px;
+$logo-w: 80px;
 $img: 300px;
 $icon: 40px;
 $imgcard: 350px;
@@ -46,6 +44,7 @@ $bigimg:600px;
 // PADDING
 $pg: 0;
 $pb:20px;
+$p:10px;
 
 
 // MARGIN

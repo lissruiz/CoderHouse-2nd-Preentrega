@@ -1,0 +1,72 @@
+/* CONTACTANOS/MAPA */
+@mixin heredarestilosflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-top: $mt;
+    border: $border1;
+    color: $colortypo1;
+    text-transform: $fontbtn;
+    border-radius: $borderbtn;
+}
+
+.mapa {
+    height: $bigimg;
+    width: $w1;
+    padding-top: calc(#{$pb} + 30px);
+    border-radius: calc(#{$mt} - 5px);
+}
+
+form {
+    text-align: start;
+    padding: $mr;
+    border-bottom: $border3;
+}
+
+.nright {
+    @include heredarestilosflex;
+    flex-direction: column;
+    height: $w1;
+    text-align: center;
+
+    h4 {
+    @include heading-styles(h4)
+    }
+    }
+
+    .desc {
+        margin-right: $mt;
+    }
+
+    .form1 {
+        width: $w1;
+        border: $colorprimario 2px solid;
+        border-radius: $bordersize;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: calc(#{$mt} - 5px);
+    }
+
+    input,
+    textarea {
+        display: block;
+        padding: $mt;
+        border: 2px solid;
+        border-radius: 3px;
+        font-size: calc(#{$fontsize4} - 8px);
+        margin-bottom: $mt;
+    }
+
+    .btn-type {
+        @extend .btn;
+    }
+
+    .tamaño {
+        width: $w1;
+        @extend .btn-type;
+    }

@@ -1,0 +1,24 @@
+/* SECTION */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $mr;
+    justify-content: center;
+
+    .imagenes {
+        position: relative;
+        overflow: hidden;
+
+        .size {
+            height: $w1;
+            border-radius: $bordersize;
+            max-width: $w1;
+
+            &:hover {
+                border: $border3;
+                border-radius: $bordersize;
+            }
+        }
+    }
+}
