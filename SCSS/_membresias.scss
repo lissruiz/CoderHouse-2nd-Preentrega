@@ -1,5 +1,5 @@
 .fondo {
-    background-image: url(../imagenes/planes\ cortada.png);
+    background-image: url(..../imagenes/planes\ cortada.png);
     background-position: bottom;
     background-size: cover;
 
@@ -28,7 +28,7 @@
     height: 400px;
     border-radius: $bordersize;
     margin: $mr;
-    margin-left: 100px;  
+    margin-left: 100px;
 }
 
 h2 {
@@ -36,9 +36,11 @@ h2 {
     border-bottom: $border1;
     border-radius: $bordersize;
 }
-.des{
+
+.des {
     padding-left: $mr;
 }
+
 .precio {
     color: $colorprimario;
     padding-left: $mr;

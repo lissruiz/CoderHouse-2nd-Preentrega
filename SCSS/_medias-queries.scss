@@ -109,7 +109,7 @@
 @media (max-width: 1246px) {
     .contenido {
         justify-content: center;
-        margin-left:$mr;
+        margin-left: $mr;
     }
 }
 
@@ -119,6 +119,7 @@
         margin-left: 180px;
     }
 }
+
 @media (max-width: 775px) {
     .contenido {
         justify-content: center;
@@ -131,6 +132,7 @@
         max-width: $w1;
         margin-left: $pg;
     }
+
     .contenido {
         margin-right: $mt;
         margin-left: 40px;
