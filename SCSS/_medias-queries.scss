@@ -16,6 +16,10 @@
     .image-grid {
         grid-template-columns: 1fr;
     }
+    .size{
+        width: $w1;
+        height: max-content;
+    }
 }
 
 /* ARTICLE/MISION/VISION */

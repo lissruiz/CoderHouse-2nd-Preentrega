@@ -54,7 +54,8 @@ body {
   align-items: center;
   height: 700px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: brightness(0.6);
 }
 
@@ -243,7 +244,7 @@ h3 {
   color: #0FC6B5;
   font-variant: small-caps;
   text-align: center;
-  margin-top: calc(20px + 40px);
+  margin-top: calc(20px + 40px );
   font-size: 26px;
 }
 
@@ -597,7 +598,7 @@ h4 {
 }
 
 .fondo {
-  background-image: url(../imagenes/planes\ cortada.png);
+  background-image: url(..../imagenes/planes\ cortada.png);
   background-position: bottom;
   background-size: cover;
 }
@@ -733,6 +734,11 @@ h2 {
 @media screen and (max-width: 600px) {
   .image-grid {
     grid-template-columns: 1fr;
+  }
+  .size {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 /* ARTICLE/MISION/VISION */
@@ -947,6 +953,4 @@ h2 {
   .back-to-top-btn {
     display: none;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
