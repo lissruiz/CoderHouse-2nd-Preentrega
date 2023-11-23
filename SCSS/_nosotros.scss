@@ -1,8 +1,6 @@
-
-.container-fluid{
-    padding: 60px;
+#clicked {
+    @extend %clicked-styles;
 }
-
 .img2 {
     height: $img;
     border-radius: $bordersize;
@@ -11,7 +9,7 @@
 
 .planesdesc {
     margin-top: $mr;
-    padding: 60px;
+    padding: 80px;
 
     h1 {
         @include heading-styles(h1);
@@ -20,7 +18,7 @@
 }
 
 .fondonosotros {
-    background-image: url(../imagenes/tonos\ verdes.jpg);
+    background-image: url(../imagenes/fondo-de-nosotros.jpg);
     background-position: center;
     background-size: cover;
 }

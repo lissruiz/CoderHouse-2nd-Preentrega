@@ -1,13 +1,22 @@
-
-
 /* HEADER */
 .scrolled {
     background-color: $colorsecundario;
     transition: background-color 0.3s;
 }
-.container-fluid{
-    padding: $p !important; ;
+
+%clicked-styles {
+    color: $colortypo1 !important;
+    background-color: $colorbase;
+    border-radius: $bordersize;
 }
+#clicked {
+    @extend %clicked-styles;
+}
+.container-fluid {
+    padding: $p !important;
+    ;
+}
+
 .logo {
     height: $logo-h;
     width: $logo-w;
@@ -109,54 +118,60 @@
 }
 
 /* FOOTER */
-footer{
+footer {
     border-top: $border2;
     border-radius: $bordersize;
     width: $w1;
     margin-top: 40px;
     margin-bottom: $pg;
-    background:$colorsecundario;
+    background: $colorsecundario;
     text-align: center;
-    height: $height;   
+    height: $height;
 
-    .logo-imagen{
+    .logo-imagen {
         @extend .logo;
     }
-    .somos{
+
+    .somos {
         margin-top: $mr;
     }
 }
+
 h4 {
     @include heading-styles(h4);
     margin-top: $pg;
 }
-.servicios p{
+
+.servicios p {
     margin: 5px;
     text-decoration: none;
 }
-.nos{
+
+.nos {
     margin-bottom: $mr;
 }
-.nos2 a{
+
+.nos2 a {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     color: $colortypo1;
     margin-bottom: $mr;
 
     .nos2 a:hover {
-        color:$colortypo1 ;
+        color: $colortypo1;
         text-decoration: underline;
     }
 }
+
 .contacto-item {
-    display: block;  
-    
-    .colorr{
+    display: block;
+
+    .colorr {
         color: #0FC6B5;
     }
 }
 
-.redes{
+.redes {
     color: $colorprimario !important;
     letter-spacing: $mt;
     size: calc(#{$icon} + 60px);
@@ -166,7 +181,8 @@ h4 {
         color: $colortypo1 !important;
     }
 }
-.derechos{
+
+.derechos {
     padding-top: $mr;
 }
 
@@ -179,15 +195,22 @@ h4 {
 }
 
 .back-to-top-btn {
-    @include RS-BTN;    
+    @include RS-BTN;
     position: fixed;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: $colorprimario;
+        color: $colorsecundario;
+    }
 }
 
 body::after {
     content: '';
     display: block;
-    height: calc(#{$icon} - 20px); 
-} 
+    height: calc(#{$icon} - 20px);
+}
+
 body:hover .back-to-top-btn {
     display: block;
-} 
+}

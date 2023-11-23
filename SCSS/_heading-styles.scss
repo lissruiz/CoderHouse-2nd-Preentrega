@@ -11,6 +11,7 @@
     }
 
     @else if $level==h2 {
+        padding-top:$p ;
         padding-bottom: $pb;
         font-size: $fontsize2;
     }
@@ -21,7 +22,7 @@
     }
 
     @else if $level==h4 {
-        margin-top: $pg;
+        margin-top:$p;
         font-size: $fontsize4;
     }
 }

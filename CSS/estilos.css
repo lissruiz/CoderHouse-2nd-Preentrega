@@ -10,14 +10,28 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #000000;
   color: whitesmoke;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #0FC6B5;
+  border-radius: 5px;
 }
 
 /* HEADER */
 .scrolled {
   background-color: #000000;
   transition: background-color 0.3s;
+}
+
+#clicked {
+  color: whitesmoke !important;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .container-fluid {
@@ -54,8 +68,7 @@ body {
   align-items: center;
   height: 700px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: brightness(0.6);
 }
 
@@ -96,7 +109,7 @@ body {
   bottom: 20px;
   right: 20px;
   display: flex;
-  z-index: 1000;
+  z-index: 999;
   position: absolute;
   flex-direction: column;
 }
@@ -135,7 +148,7 @@ h4 {
   color: #0FC6B5;
   font-variant: small-caps;
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px;
   font-size: 24px;
   margin-top: 0;
 }
@@ -185,8 +198,13 @@ h4 {
 .back-to-top-btn {
   bottom: 20px;
   right: 20px;
-  z-index: 1000;
+  z-index: 999;
   position: fixed;
+  transition: background-color 0.3s, color 0.3s;
+}
+.back-to-top-btn:hover {
+  background-color: #0FC6B5;
+  color: #000000;
 }
 
 body::after {
@@ -211,7 +229,7 @@ body:hover .back-to-top-btn {
   overflow: hidden;
 }
 .image-grid .imagenes .size {
-  height: 100%;
+  height: 300px;
   border-radius: 10px;
   max-width: 100%;
 }
@@ -244,7 +262,7 @@ h3 {
   color: #0FC6B5;
   font-variant: small-caps;
   text-align: center;
-  margin-top: calc(20px + 40px );
+  margin-top: calc(20px + 40px);
   font-size: 26px;
 }
 
@@ -270,71 +288,52 @@ h3 {
   background-position: top;
   background-size: cover;
   grid-area: img1;
-  background-image: url(../imagenes/sismo07.jpg);
+  background-image: url(../imagenes/chica-hace-cardio.jpg);
 }
 
 .item2 {
   background-position: center;
   background-size: cover;
   grid-area: img2;
-  background-image: url(../imagenes/hipertrust.png);
+  background-image: url(../imagenes/ejercicio-de-hipertrust.png);
 }
 
 .item3 {
   background-position: center;
   background-size: cover;
   grid-area: img3;
-  background-image: url(../imagenes/estirando.jpg);
+  background-image: url(../imagenes/estiramiento-al\ final-de-cada-sección.jpg);
 }
 
 .item4 {
   background-position: center;
   background-size: cover;
   grid-area: img4;
-  background-image: url(../imagenes/sismo05.jpg);
+  background-image: url(../imagenes/chico-saluda-muy-feliz.jpg);
 }
 
 .item5 {
   background-position: top;
   background-size: cover;
   grid-area: img5;
-  background-image: url(../imagenes/club.jpeg);
+  background-image: url(../imagenes/funcional-club.jpeg);
 }
 
 .item6 {
   background-position: top;
   background-size: cover;
   grid-area: img6;
-  background-image: url(../imagenes/sismo02.jpg);
-}
-
-.item7 {
-  background-position: center;
-  background-size: cover;
-  grid-area: img7;
-  background-image: url(../imagenes/sismo04.jpg);
+  background-image: url(../imagenes/chico-hace-sentadillas-con-barra.jpg);
 }
 
 .item8 {
   background-position: top;
   background-size: cover;
   grid-area: img8;
-  background-image: url(../imagenes/pelota.jpg);
+  background-image: url(../imagenes/entrenamiento-con-pelota.jpg);
 }
 
 /* SECTION CTA */
-.btn, #btnplanes, .btn-type, .tamaño, .card-body .btn-type, .card-body .tamaño, .card-body .btn {
-  margin-top: 10px;
-  border: 3px solid #0FC6B5;
-  color: whitesmoke;
-  text-transform: normal;
-  border-radius: 8px;
-}
-.btn:hover, #btnplanes:hover, .btn-type:hover, .tamaño:hover {
-  background-color: #0FC6B5;
-  color: #000000;
-}
-
 .card-body {
   background-color: #000000;
   margin-top: 10px;
@@ -345,6 +344,11 @@ h3 {
   font-size: 24px;
   color: #0FC6B5;
 }
+.card-body .btn:hover, .card-body #btnplanes:hover, .card-body .btn-type:hover, .card-body .tamaño:hover {
+  background-color: #0FC6B5;
+  color: #000000;
+}
+
 /* TESTIMONIO */
 article {
   margin-bottom: 20px !important;
@@ -419,6 +423,10 @@ article {
   border-radius: 8px;
 }
 
+#margrow {
+  padding-top: 0;
+}
+
 .mapa {
   height: 600px;
   width: 100%;
@@ -444,7 +452,7 @@ form {
   color: #0FC6B5;
   font-variant: small-caps;
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px;
   font-size: 24px;
 }
 
@@ -473,6 +481,11 @@ textarea {
   margin-bottom: 10px;
 }
 
+.btn-type:hover, .tamaño:hover {
+  background-color: #0FC6B5;
+  color: #000000;
+}
+
 .tamaño {
   width: 100%;
 }
@@ -496,7 +509,7 @@ h4 {
   color: #0FC6B5;
   font-variant: small-caps;
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px;
   font-size: 24px;
   margin-top: 0;
 }
@@ -528,6 +541,12 @@ h4 {
   color: #0FC6B5;
 }
 
+.telefono {
+  margin-top: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
 .redes {
   color: #0FC6B5 !important;
   letter-spacing: 10px;
@@ -542,10 +561,6 @@ h4 {
   padding-top: 20px;
 }
 
-.container-fluid {
-  padding: 60px;
-}
-
 .img2 {
   height: 300px;
   border-radius: 10px;
@@ -554,7 +569,7 @@ h4 {
 
 .planesdesc {
   margin-top: 20px;
-  padding: 60px;
+  padding: 80px;
 }
 .planesdesc h1 {
   color: #0FC6B5;
@@ -565,7 +580,7 @@ h4 {
 }
 
 .fondonosotros {
-  background-image: url(../imagenes/tonos\ verdes.jpg);
+  background-image: url(../imagenes/fondo-de-nosotros.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -598,19 +613,16 @@ h4 {
 }
 
 .fondo {
-  background-image: url(..../imagenes/planes\ cortada.png);
+  background-image: url(../imagenes/fondo-de-membresias.png);
   background-position: bottom;
   background-size: cover;
 }
 .fondo .planesdesc {
   color: #585F5E;
   font-weight: bold;
-  padding-bottom: calc(20px + 30px);
+  padding-bottom: calc(20px + 40px);
   padding-top: calc(20px + 30px);
   width: 760px;
-}
-.fondo .planesdesc span {
-  font-weight: bold;
 }
 .fondo .planesdesc h1 {
   color: #0FC6B5;
@@ -623,10 +635,11 @@ h4 {
 
 .contenido {
   background-color: rgba(15, 198, 180, 0.3647058824);
-  border: 3px solid #0FC6B5;
+  box-shadow: 0 4px 8px #0FC6B5;
+  transform: translateY(-5px);
   width: 300px;
-  height: 400px;
-  border-radius: 10px;
+  height: 450px;
+  border-radius: 30px;
   margin: 20px;
   margin-left: 100px;
 }
@@ -635,6 +648,7 @@ h2 {
   color: #0FC6B5;
   font-variant: small-caps;
   text-align: center;
+  padding-top: 10px;
   padding-bottom: 20px;
   font-size: 28px;
   border-bottom: 3px solid #0FC6B5;
@@ -642,7 +656,7 @@ h2 {
 }
 
 .des {
-  padding-left: 20px;
+  padding: 20px;
 }
 
 .precio {
@@ -657,13 +671,18 @@ h2 {
   align-content: center;
   margin: 10px;
 }
+#btnplanes:hover {
+  background-color: #0FC6B5;
+  color: #000000;
+}
 
 .lista {
   padding-top: 20px;
+  text-align: start;
 }
 
 .fondohorario {
-  background-image: url(../imagenes/reloj.jpeg);
+  background-image: url(../imagenes/fondo-de-los-horarios.jpeg);
   background-position: center;
   background-size: cover;
 }
@@ -688,18 +707,16 @@ h2 {
   margin-left: 350px;
   border-radius: 10px;
 }
-
 .calendarioimg:hover {
   box-shadow: 4px 4px 6px 6px #0FC6B5;
   transform: translateY(-5px);
-  border-radius: 10px;
 }
 
 .fondoproduct {
-  background-image: url(../imagenes/productos.png);
+  background-image: url(../imagenes/fondo-de-la-tienda.png);
   background-position: top;
   background-size: cover;
-  padding: 60px;
+  padding: 100px;
 }
 .fondoproduct h1 {
   color: #0FC6B5;
@@ -709,10 +726,9 @@ h2 {
   margin-top: 10px;
 }
 
-.img2 {
-  height: 300px;
+.card-img-bottom {
+  border: 2px solid #000000;
   border-radius: 10px;
-  max-width: 100%;
 }
 
 .tamaño {
@@ -729,16 +745,30 @@ h2 {
 @media screen and (max-width: 1200px) {
   .image-grid {
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 866px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 780px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 600px) {
   .image-grid {
     grid-template-columns: 1fr;
+    margin-left: 100px;
   }
-  .size {
-    width: 100%;
-    height: -moz-max-content;
-    height: max-content;
+}
+@media screen and (max-width: 460px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    margin-left: 0;
   }
 }
 /* ARTICLE/MISION/VISION */
@@ -953,4 +983,6 @@ h2 {
   .back-to-top-btn {
     display: none;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */

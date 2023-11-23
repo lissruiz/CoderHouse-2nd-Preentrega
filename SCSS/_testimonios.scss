@@ -1,4 +1,7 @@
 /* TESTIMONIO */
+#clicked {
+    @extend %clicked-styles;
+}
 article{
     margin-bottom: $mr !important;
 }

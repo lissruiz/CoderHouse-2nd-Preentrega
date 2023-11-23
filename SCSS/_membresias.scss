@@ -1,18 +1,18 @@
+#clicked {
+    @extend %clicked-styles;
+}
+
 .fondo {
-    background-image: url(..../imagenes/planes\ cortada.png);
+    background-image: url(../imagenes/fondo-de-membresias.png);
     background-position: bottom;
     background-size: cover;
 
     .planesdesc {
         color: $colortypo2;
         font-weight: bold;
-        padding-bottom: calc(#{$pb} + 30px);
+        padding-bottom: calc(#{$pb} + 40px);
         padding-top: calc(#{$pb} + 30px);
         width: 760px;
-
-        span {
-            font-weight: bold
-        }
 
         h1 {
             @include heading-styles(h1);
@@ -23,10 +23,11 @@
 
 .contenido {
     background-color: #0fc6b45d;
-    border: $border1;
+    box-shadow: 0 4px 8px $colorprimario;
+    transform: translateY(-5px);
     width: 300px;
-    height: 400px;
-    border-radius: $bordersize;
+    height: 450px;
+    border-radius: $bordersize2;
     margin: $mr;
     margin-left: 100px;
 }
@@ -51,8 +52,14 @@ h2 {
     align-content: center;
     margin: $mt;
     @extend .btn;
+
+    &:hover {
+        background-color: $colorprimario;
+        color: $colorsecundario;
+    }
 }
 
 .lista {
     padding-top: $pb;
+    text-align: start;
 }

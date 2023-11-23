@@ -1,19 +1,21 @@
+#clicked {
+    @extend %clicked-styles;
+}
 
 .fondoproduct {
-    background-image: url(../imagenes/productos.png);
+    background-image: url(../imagenes/fondo-de-la-tienda.png);
     background-position: top;
     background-size: cover;
-    padding: 60px;
+    padding: 100px;
 
     h1 {
         @include heading-styles(h1);
     }
 }
 
-.img2 {
-    height: $img;
+.card-img-bottom {
+    border:2px solid $colorsecundario; 
     border-radius: $bordersize;
-    max-width: $w1;
 }
 
 .tamaño {

@@ -45,47 +45,41 @@ h3 {
 .item1 {
     @include galeriaimagenes($position: top);
     grid-area: img1;
-    background-image: url(../imagenes/sismo07.jpg);
+    background-image: url(../imagenes/chica-hace-cardio.jpg);
 }
 
 .item2 {
     @include galeriaimagenes($position: center);
     grid-area: img2;
-    background-image: url(../imagenes/hipertrust.png);
+    background-image: url(../imagenes/ejercicio-de-hipertrust.png);
 }
 
 .item3 {
     @include galeriaimagenes($position: center);
     grid-area: img3;
-    background-image: url(../imagenes/estirando.jpg);
+    background-image: url(../imagenes/estiramiento-al\ final-de-cada-sección.jpg);
 }
 
 .item4 {
     @include galeriaimagenes($position: center);
     grid-area: img4;
-    background-image: url(../imagenes/sismo05.jpg);
+    background-image: url(../imagenes/chico-saluda-muy-feliz.jpg);
 }
 
 .item5 {
     @include galeriaimagenes($position: top);
     grid-area: img5;
-    background-image: url(../imagenes/club.jpeg);
+    background-image: url(../imagenes/funcional-club.jpeg);
 }
 
 .item6 {
     @include galeriaimagenes($position: top);
     grid-area: img6;
-    background-image: url(../imagenes/sismo02.jpg);
-}
-
-.item7 {
-    @include galeriaimagenes($position: center);
-    grid-area: img7;
-    background-image: url(../imagenes/sismo04.jpg);
+    background-image: url(../imagenes/chico-hace-sentadillas-con-barra.jpg);
 }
 
 .item8 {
     @include galeriaimagenes($position: top);
     grid-area: img8;
-    background-image: url(../imagenes/pelota.jpg);
+    background-image: url(../imagenes/entrenamiento-con-pelota.jpg);
 }

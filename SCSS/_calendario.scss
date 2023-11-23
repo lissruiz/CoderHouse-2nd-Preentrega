@@ -27,7 +27,7 @@
 }
 
 .fondohorario{
-    background-image: url(../imagenes/reloj.jpeg);
+    background-image: url(../imagenes/fondo-de-los-horarios.jpeg);
     background-position: center;
     background-size: cover;
 
@@ -45,14 +45,13 @@
     border-radius: $pb;
 }
 
-.calendarioimg{
+.calendarioimg {
     margin-top: $pb;
     margin-left: 350px;
     border-radius: $bordersize;
-}
 
-.calendarioimg:hover{
-    box-shadow: 4px 4px 6px 6px $colorprimario;
-    transform: translateY(-5px);
-    border-radius: $bordersize;
+    &:hover {
+        box-shadow: 4px 4px 6px 6px $colorprimario;
+        transform: translateY(-5px);
+    }
 }

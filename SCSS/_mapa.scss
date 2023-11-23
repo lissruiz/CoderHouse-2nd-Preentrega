@@ -12,7 +12,9 @@
     text-transform: $fontbtn;
     border-radius: $borderbtn;
 }
-
+#margrow{
+    padding-top: $pg;
+}
 .mapa {
     height: $bigimg;
     width: $w1;
@@ -64,6 +66,11 @@ form {
 
     .btn-type {
         @extend .btn;
+
+        &:hover {
+            background-color: $colorprimario;
+            color: $colorsecundario;
+        }
     }
 
     .tamaño {

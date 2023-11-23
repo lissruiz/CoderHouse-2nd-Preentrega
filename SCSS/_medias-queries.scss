@@ -9,16 +9,33 @@
 @media screen and (max-width: 1200px) {
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 866px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 780px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: $pg;
     }
 }
 
 @media screen and (max-width: 600px) {
     .image-grid {
         grid-template-columns: 1fr;
+        margin-left: 100px;
+        
     }
-    .size{
-        width: $w1;
-        height: max-content;
+}
+
+@media screen and (max-width: 460px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+        margin-left: $pg;
     }
 }
 
