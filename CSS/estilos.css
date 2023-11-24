@@ -593,12 +593,12 @@ h4 {
   flex-wrap: wrap;
 }
 .card-container .card {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #111317;
+  box-shadow: 0 4px 8px #0FC6B5;
+  transform: translateY(-5px);
   margin-top: 20px;
   padding-left: 0;
   padding-right: 0;
-  box-shadow: 0 4px 8px #0FC6B5;
-  transform: translateY(-5px);
   border-radius: 10px;
 }
 .card-container .card .card-body2 {

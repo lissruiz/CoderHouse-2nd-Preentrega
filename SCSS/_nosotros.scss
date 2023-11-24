@@ -31,12 +31,12 @@
     flex-wrap: wrap;
 
     .card {
-        background-color: $colorbase;
+        background-color: $colorcard;
+        box-shadow: 0 4px 8px $colorprimario;
+        transform: translateY(-5px);
         margin-top: $mr;
         padding-left: $pg;
         padding-right: $pg;
-        box-shadow: 0 4px 8px $colorprimario;
-        transform: translateY(-5px);
         border-radius: $bordersize;
 
         .card-body2 {
