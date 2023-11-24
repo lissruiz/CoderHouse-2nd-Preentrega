@@ -613,11 +613,7 @@ h4 {
 }
 
 .fondo {
-<<<<<<< HEAD
   background-image: url(../imagenes/fondo-de-membresias.png);
-=======
-  background-image: url(../imagenes/planes\ cortada.png);
->>>>>>> 99702c5d7e1d15a9a269ad765e7cc02644b2602e
   background-position: bottom;
   background-size: cover;
 }
@@ -760,7 +756,7 @@ h2 {
 @media screen and (max-width: 780px) {
   .image-grid {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 0;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 600px) {
@@ -770,6 +766,12 @@ h2 {
   }
 }
 @media screen and (max-width: 460px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 370px) {
   .image-grid {
     grid-template-columns: 1fr;
     margin-left: 0;
@@ -987,10 +989,6 @@ h2 {
   .back-to-top-btn {
     display: none;
   }
-<<<<<<< HEAD
 }
 
 /*# sourceMappingURL=estilos.css.map */
-=======
-}/*# sourceMappingURL=estilos.css.map */
->>>>>>> 99702c5d7e1d15a9a269ad765e7cc02644b2602e
