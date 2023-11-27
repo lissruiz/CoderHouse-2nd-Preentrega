@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 750px;
   width: 100%;
   object-fit: cover;
   filter: brightness(0.6);
@@ -743,7 +743,7 @@ h2 {
 @media (max-width: 690px) {
   .carousel-caption {
     width: 60%;
-    height: 250px;
+    height: 280px;
   }
 }
 /* SECTION */
