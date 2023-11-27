@@ -21,6 +21,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
+::selection {
+  background-color: #0FC6B5;
+  color: #000000;
+}
+
 /* HEADER */
 .scrolled {
   background-color: #000000;
