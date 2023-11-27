@@ -1,0 +1,55 @@
+#clicked {
+    @extend %clicked-styles;
+}
+.img2 {
+    height: $img;
+    border-radius: $bordersize;
+    max-width: $w1;
+}
+
+.planesdesc {
+    margin-top: $mr;
+    padding: 80px;
+
+    h1 {
+        @include heading-styles(h1);
+        
+    }
+}
+
+.fondonosotros {
+    background-image: url(../imagenes/fondo-de-nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-container {
+    margin-left: calc(#{$mr} + 70px);
+    display: inline-flex;
+    justify-content: center;
+    gap: $mr;
+    flex-wrap: wrap;
+
+    .card {
+        background-color: $colorcard;
+        box-shadow: 0 4px 8px $colorprimario;
+        transform: translateY(-5px);
+        margin-top: $mr;
+        padding-left: $pg;
+        padding-right: $pg;
+        border-radius: $bordersize;
+
+        .card-body2 {
+            padding: $p;
+
+            .redes {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+.redes:hover {
+    color: $colortypo1 !important;
+}

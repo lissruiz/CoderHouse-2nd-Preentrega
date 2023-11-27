@@ -1,0 +1,85 @@
+/* GALERIA */
+section {
+    margin-bottom: calc(#{$mr} + 20px);
+}
+
+h3 {
+    @include heading-styles(h3)
+}
+
+.galeria {
+    margin-top: $mt;
+    margin-bottom: calc(#{$bottom} - 10px);
+    border-top: $border1;
+    border-radius: $bordersize;
+    height: $bigimg;
+    width: $w1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+        "img1 img2 img3 img4"
+        "img1 img5 img6 img6"
+        "img1 img8 img6 img6";
+
+    .item {
+        border: $border3;
+        border-radius: $bordersize2;
+        overflow: hidden;
+    }
+}
+
+@mixin galeriaimagenes($position:top) {
+    background-position: $position;
+    background-size: cover;
+}
+
+@mixin galeriaimagenes1 {
+    @include galeriaimagenes($position: top);
+}
+
+@mixin galeriaimagenes2 {
+    @include galeriaimagenes($position: center);
+}
+
+.item1 {
+    @include galeriaimagenes($position: top);
+    grid-area: img1;
+    background-image: url(../imagenes/chica-hace-cardio.jpg);
+}
+
+.item2 {
+    @include galeriaimagenes($position: center);
+    grid-area: img2;
+    background-image: url(../imagenes/ejercicio-de-hipertrust.png);
+}
+
+.item3 {
+    @include galeriaimagenes($position: center);
+    grid-area: img3;
+    background-image: url(../imagenes/estiramiento-al\ final-de-cada-sección.jpg);
+}
+
+.item4 {
+    @include galeriaimagenes($position: center);
+    grid-area: img4;
+    background-image: url(../imagenes/chico-saluda-muy-feliz.jpg);
+}
+
+.item5 {
+    @include galeriaimagenes($position: top);
+    grid-area: img5;
+    background-image: url(../imagenes/funcional-club.jpeg);
+}
+
+.item6 {
+    @include galeriaimagenes($position: top);
+    grid-area: img6;
+    background-image: url(../imagenes/chico-hace-sentadillas-con-barra.jpg);
+}
+
+.item8 {
+    @include galeriaimagenes($position: top);
+    grid-area: img8;
+    background-image: url(../imagenes/entrenamiento-con-pelota.jpg);
+}

@@ -1,0 +1,65 @@
+#clicked {
+    @extend %clicked-styles;
+}
+
+.fondo {
+    background-image: url(../imagenes/fondo-de-membresias.png);
+    background-position: bottom;
+    background-size: cover;
+
+    .planesdesc {
+        color: $colortypo2;
+        font-weight: bold;
+        padding-bottom: calc(#{$pb} + 40px);
+        padding-top: calc(#{$pb} + 30px);
+        width: 760px;
+
+        h1 {
+            @include heading-styles(h1);
+            padding-top: $mr;
+        }
+    }
+}
+
+.contenido {
+    background-color: #0fc6b45d;
+    box-shadow: 0 4px 8px $colorprimario;
+    transform: translateY(-5px);
+    width: 300px;
+    height: 450px;
+    border-radius: $bordersize2;
+    margin: $mr;
+    margin-left: 100px;
+}
+
+h2 {
+    @include heading-styles(h2);
+    border-bottom: $border1;
+    border-radius: $bordersize;
+}
+
+.des {
+    padding: $mr;
+}
+
+.precio {
+    color: $colorprimario;
+    padding-left: $mr;
+}
+
+#btnplanes {
+    @include heredarestilosflex;
+    align-content: center;
+    margin: $mt;
+    @extend .btn;
+
+    &:hover {
+        background-color: $colorprimario;
+        color: $colorsecundario;
+    }
+}
+
+.lista {
+    padding-top: $pb;
+    text-align: start;
+}

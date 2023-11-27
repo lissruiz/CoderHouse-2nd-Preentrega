@@ -1,0 +1,59 @@
+// Variables
+$mivariable: valor;
+
+//+
+
+// Paleta de colores
+$colorprimario: #0FC6B5;
+$colorsecundario: #000000;
+$colorbase: rgba(0, 0, 0, 0.3);
+$colorcard:#111317;
+$colortypo1: whitesmoke;
+$colortypo2: #585F5E;
+
+
+// FONT
+$fontprincipal: 'Noto Sans', sans-serif;
+$fontsecundaria: 'Noto Serif TC', serif;
+$fontvariant1: small-caps;
+$fontvariant2: uppercase;
+$fontsize1: 30px;
+$fontsize2:28px;
+$fontsize3:26px;
+$fontsize4:24px;
+$fontbtn:normal;
+
+// BORDER
+$border1: 3px solid $colorprimario;
+$border2: 3px dotted $colorprimario;
+$border3: 5px solid black;
+$bordersize: 10px;
+$bordersize2:30px;
+$borderbtn:8px;
+
+// SIZE
+$logo-h: 80px;
+$logo-w: 80px;
+$img: 300px;
+$icon: 40px;
+$imgcard: 350px;
+$w1: 100%;
+$w2: 50%;
+$height:auto;
+$bigimg:600px;
+
+// PADDING
+$pg: 0;
+$pb:20px;
+$p:10px;
+
+
+// MARGIN
+$mr: 20px;
+$mt:10px;
+
+//POSITION REDES SOCIALES Y BACK TO TOP BTN
+$bottom: 20px;
+$right: 20px;
+$z-index: 999;
+
