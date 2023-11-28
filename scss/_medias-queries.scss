@@ -165,6 +165,13 @@
     }
 }
 
+@media (max-width: 400px) {
+    
+    .contenido {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
 /* INSTRUCTORES */
 @media (max-width: 1010px) {
     .card {
