@@ -9,9 +9,11 @@
     background-color: $colorbase;
     border-radius: $bordersize;
 }
+
 #clicked {
     @extend %clicked-styles;
 }
+
 .container-fluid {
     padding: $p !important;
 }

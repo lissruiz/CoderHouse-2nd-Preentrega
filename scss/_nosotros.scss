@@ -1,6 +1,7 @@
 #clicked {
     @extend %clicked-styles;
 }
+
 .img2 {
     height: $img;
     border-radius: $bordersize;
@@ -13,7 +14,6 @@
 
     h1 {
         @include heading-styles(h1);
-        
     }
 }
 
@@ -21,6 +21,13 @@
     background-image: url(../imagenes/fondo-de-nosotros.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.fondonosotros {
+    background-image: url(../imagenes/fondo-de-nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: $p;
 }
 
 .card-container {
@@ -48,7 +55,6 @@
         }
     }
 }
-
 
 .redes:hover {
     color: $colortypo1 !important;

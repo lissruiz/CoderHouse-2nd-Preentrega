@@ -1,57 +1,64 @@
 /* FOOTER */
-footer{
+footer {
     border-top: $border2;
     border-radius: $bordersize;
     width: $w1;
     margin-top: 40px;
     margin-bottom: $pg;
-    background:$colorsecundario;
+    background: $colorsecundario;
     text-align: center;
-    height: $height;   
+    height: $height;
 
-    .logo-imagen{
+    .logo-imagen {
         @extend .logo;
     }
-    .somos{
+
+    .somos {
         margin-top: $mr;
     }
 }
+
 h4 {
     @include heading-styles(h4);
     margin-top: $pg;
 }
-.servicios p{
+
+.servicios p {
     margin: 5px;
     text-decoration: none;
 }
-.nos{
+
+.nos {
     margin-bottom: $mr;
 }
-.nos2 a{
+
+.nos2 a {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     color: $colortypo1;
     margin-bottom: $mr;
 
     .nos2 a:hover {
-        color:$colortypo1 ;
+        color: $colortypo1;
         text-decoration: underline;
     }
 }
+
 .contacto-item {
-    display: block;  
-    
-    .colorr{
+    display: block;
+
+    .colorr {
         color: #0FC6B5;
     }
 }
-.telefono{
+
+.telefono {
     margin-top: $p;
-    color: $colortypo1; 
-    text-decoration: none; 
+    color: $colortypo1;
+    text-decoration: none;
 }
 
-.redes{
+.redes {
     color: $colorprimario !important;
     letter-spacing: $mt;
     size: calc(#{$icon} + 60px);
@@ -61,6 +68,7 @@ h4 {
         color: $colortypo1 !important;
     }
 }
-.derechos{
+
+.derechos {
     padding-top: $mr;
 }

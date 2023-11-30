@@ -12,9 +12,11 @@
     text-transform: $fontbtn;
     border-radius: $borderbtn;
 }
-#margrow{
+
+#margrow {
     padding-top: $pg;
 }
+
 .mapa {
     height: $bigimg;
     width: $w1;
@@ -35,45 +37,45 @@ form {
     text-align: center;
 
     h4 {
-    @include heading-styles(h4)
+        @include heading-styles(h4)
     }
-    }
+}
 
-    .desc {
-        margin-right: $mt;
-    }
+.desc {
+    margin-right: $mt;
+}
 
-    .form1 {
-        width: $w1;
-        border: $colorprimario 2px solid;
-        border-radius: $bordersize;
-    }
+.form1 {
+    width: $w1;
+    border: $colorprimario 2px solid;
+    border-radius: $bordersize;
+}
 
-    label {
-        font-weight: bold;
-        margin-bottom: calc(#{$mt} - 5px);
-    }
+label {
+    font-weight: bold;
+    margin-bottom: calc(#{$mt} - 5px);
+}
 
-    input,
-    textarea {
-        display: block;
-        padding: $mt;
-        border: 2px solid;
-        border-radius: 3px;
-        font-size: calc(#{$fontsize4} - 8px);
-        margin-bottom: $mt;
-    }
+input,
+textarea {
+    display: block;
+    padding: $mt;
+    border: 2px solid;
+    border-radius: 3px;
+    font-size: calc(#{$fontsize4} - 8px);
+    margin-bottom: $mt;
+}
 
-    .btn-type {
-        @extend .btn;
+.btn-type {
+    @extend .btn;
 
-        &:hover {
-            background-color: $colorprimario;
-            color: $colorsecundario;
-        }
+    &:hover {
+        background-color: $colorprimario;
+        color: $colorsecundario;
     }
+}
 
-    .tamaño {
-        width: $w1;
-        @extend .btn-type;
-    }
+.tamaño {
+    width: $w1;
+    @extend .btn-type;
+}

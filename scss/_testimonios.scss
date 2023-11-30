@@ -2,9 +2,11 @@
 #clicked {
     @extend %clicked-styles;
 }
-article{
+
+article {
     margin-bottom: $mr !important;
 }
+
 .img2 {
     height: $img;
     border-radius: $bordersize;
@@ -14,14 +16,15 @@ article{
 .fondo2 {
     margin-bottom: 10px;
     background-image: linear-gradient(0deg, #080808 0%, #0fc6b5 40%, #060606 90%);
-    
+
     .estruct {
         padding: $mr;
-        margin-bottom:50px ;
+        margin-bottom: 50px;
         background-color: $colorbase;
         border-radius: $bordersize2;
-    
+
     }
+
     .active {
         border-radius: $bordersize;
 
@@ -41,19 +44,22 @@ article{
         }
     }
 }
-.col-lg-8{
-    margin-bottom:80px ;
 
-    .frase{
+.col-lg-8 {
+    margin-bottom: 80px;
+
+    .frase {
         font-size: $fontsize4;
     }
+
     #position {
         text-align: start;
-        margin-top:$mt ;
-        margin-bottom:$mt ;
+        margin-top: $mt;
+        margin-bottom: $mt;
     }
-    .experiencia{
-        margin-bottom:$mt ;
+
+    .experiencia {
+        margin-bottom: $mt;
     }
 }
 

@@ -246,7 +246,7 @@ body:hover .back-to-top-btn {
 .row {
   padding-top: 20px;
   align-items: center;
-  --bs-gutter-x:$pg;
+  --bs-gutter-x: $pg;
 }
 .row .size {
   font-size: 40px;
@@ -590,6 +590,13 @@ h4 {
   background-size: cover;
 }
 
+.fondonosotros {
+  background-image: url(../imagenes/fondo-de-nosotros.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+}
+
 .card-container {
   margin-left: calc(20px + 70px);
   display: inline-flex;
@@ -654,8 +661,11 @@ h2 {
   font-variant: small-caps;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-size: 28px;
+}
+
+#borderb {
   border-bottom: 3px solid #0FC6B5;
   border-radius: 10px;
 }
@@ -709,7 +719,7 @@ h2 {
 
 .calendarioimg {
   margin-top: 20px;
-  margin-left: 350px;
+  margin-left: 250px;
   border-radius: 10px;
 }
 .calendarioimg:hover {
@@ -886,42 +896,21 @@ h2 {
   }
 }
 /* INSTRUCTORES */
-@media (max-width: 1010px) {
+@media (max-width: 1200px) {
   .card {
     width: auto;
   }
   .card-container {
     width: 100%;
     justify-content: center;
-  }
-}
-@media (max-width: 803px) {
-  .card-container {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-@media (max-width: 444px) {
-  .card-container {
-    width: 100%;
-    justify-content: center;
-    margin-left: 0;
-  }
-  .card {
-    width: auto;
-  }
-}
-@media (max-width: 364px) {
-  .card-container {
-    margin-left: 0;
-    justify-content: center;
+    gap: 0;
     margin-left: 0;
   }
 }
 /* CALENDARIO */
 @media only screen and (max-width: 1300px) {
   .calendarioimg {
-    margin-left: 150px;
+    margin-left: 100px;
   }
 }
 @media only screen and (max-width: 1040px) {
@@ -929,9 +918,10 @@ h2 {
     margin-left: 50px;
   }
 }
-@media only screen and (max-width: 923px) {
+@media only screen and (max-width: 990px) {
   .calendarioimg {
-    width: 75%;
+    margin-left: 0;
+    width: 100%;
   }
 }
 /* PRODUCTOS */
@@ -961,7 +951,7 @@ h2 {
     padding-bottom: 10px;
     margin-bottom: 0;
     text-align: center;
-    --bs-gutter-x:$pg !important;
+    --bs-gutter-x: $pg !important;
   }
   .row.imagenpeque {
     justify-content: center;

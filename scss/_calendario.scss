@@ -4,29 +4,29 @@
     font-variant: $fontvariant1;
     text-align: center;
 
-    @if $level == h1 {
+    @if $level==h1 {
         font-size: $fontsize1;
         margin-top: $mt;
     }
 
-    @else if $level == h2 {
+    @else if $level==h2 {
         padding-bottom: $pb;
         font-size: $fontsize2;
     }
 
-    @else if $level == h3 {
+    @else if $level==h3 {
         margin-top: $mr;
         padding-bottom: $pg;
         font-size: $fontsize3;
     }
 
-    @else if $level == h4 {
+    @else if $level==h4 {
         margin-top: $pg;
         font-size: $fontsize4;
     }
 }
 
-.fondohorario{
+.fondohorario {
     background-image: url(../imagenes/fondo-de-los-horarios.jpeg);
     background-position: center;
     background-size: cover;
@@ -36,8 +36,8 @@
     }
 }
 
-.calendario{
-    $colorbase:rgba(0, 0, 0, 0.400) ;
+.calendario {
+    $colorbase: rgba(0, 0, 0, 0.400);
     display: block;
     width: $w1;
     padding-top: $pb;
@@ -47,7 +47,7 @@
 
 .calendarioimg {
     margin-top: $pb;
-    margin-left: 350px;
+    margin-left: 250px;
     border-radius: $bordersize;
 
     &:hover {
