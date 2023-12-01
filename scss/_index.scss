@@ -82,11 +82,12 @@
             color: $colorsecundario;
         }
     }
-
-    h1 {
-        @include heading-styles(h1);
-    }
 }
+
+h1 {
+    @include heading-styles(h1);
+}
+
 
 @mixin RS-BTN {
     bottom: $bottom;
